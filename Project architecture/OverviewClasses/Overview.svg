@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="997px" preserveAspectRatio="none" style="width:2146px;height:997px;" version="1.1" viewBox="0 0 2146 997" width="2146px" zoomAndPan="magnify"><defs><filter height="300%" id="f1x8op6ts6jtmr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e6efc8d901e4da21a26146e04016a06c]
+class TypeProduitPharmaceutique--><rect codeLine="2" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="103.3438" id="TypeProduitPharmaceutique" style="stroke: #A80036; stroke-width: 1.5;" width="188" x="467.5" y="766"/><ellipse cx="482.5" cy="782" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M481.3594,782.7969 L481.3594,785.2969 L485.6875,785.2969 L485.6875,784.375 Q485.6875,783.7656 485.9219,783.5 Q486.1719,783.2344 486.5469,783.2344 Q486.9219,783.2344 487.1563,783.5 Q487.3906,783.7656 487.3906,784.375 L487.3906,787 L479.3906,787 Q478.7656,787 478.5,786.7656 Q478.25,786.5313 478.25,786.1406 Q478.25,785.7656 478.5156,785.5313 Q478.7813,785.2969 479.3906,785.2969 L479.6563,785.2969 L479.6563,778.6406 L479.3906,778.6406 Q478.7656,778.6406 478.5,778.4063 Q478.25,778.1719 478.25,777.7813 Q478.25,777.4063 478.5,777.1719 Q478.7656,776.9375 479.3906,776.9375 L487.0156,776.9375 L487.0156,779.5313 Q487.0156,780.1406 486.7813,780.4063 Q486.5625,780.6563 486.1719,780.6563 Q485.7969,780.6563 485.5625,780.4063 Q485.3281,780.1406 485.3281,779.5313 L485.3281,778.6406 L481.3594,778.6406 L481.3594,781.0938 L482.8438,781.0938 Q482.8438,780.4375 482.9688,780.25 Q483.2344,779.8438 483.7031,779.8438 Q484.0781,779.8438 484.3125,780.1094 Q484.5469,780.3594 484.5469,780.9688 L484.5469,782.9375 Q484.5469,783.4844 484.4219,783.6719 Q484.1563,784.0625 483.7031,784.0625 Q483.2344,784.0625 482.9688,783.6563 Q482.8438,783.4688 482.8438,782.7969 L481.3594,782.7969 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="156" x="496.5" y="786.9102">TypeProduitPharmaceutique</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="468.5" x2="654.5" y1="798" y2="798"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="475.5" y="806"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="487.5" y="813.4189">vaccin</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="475.5" y="819.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="487.5" y="827.2549">medicament</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="475.5" y="833.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="487.5" y="841.0908">produit de beaute</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="475.5" y="847.5078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="123" x="487.5" y="854.9268">complements alimentaires</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="468.5" x2="654.5" y1="861.3438" y2="861.3438"/><!--MD5=[9e79bbcdb5c8ea445aab276598bf3396]
+class Pharmacie--><rect codeLine="9" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="172.5234" id="Pharmacie" style="stroke: #A80036; stroke-width: 1.5;" width="197" x="788" y="125"/><ellipse cx="852.25" cy="141" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M855.0156,136.875 Q855.1719,136.6563 855.3594,136.5469 Q855.5469,136.4375 855.7656,136.4375 Q856.1406,136.4375 856.375,136.7031 Q856.6094,136.9531 856.6094,137.5625 L856.6094,139.0156 Q856.6094,139.625 856.375,139.8906 Q856.1406,140.1563 855.7656,140.1563 Q855.4219,140.1563 855.2188,139.9531 Q855.0156,139.7656 854.9063,139.25 Q854.8594,138.8906 854.6719,138.7031 Q854.3438,138.3281 853.7344,138.1094 Q853.125,137.8906 852.5,137.8906 Q851.7344,137.8906 851.0938,138.2188 Q850.4688,138.5469 849.9688,139.2969 Q849.4844,140.0469 849.4844,141.0781 L849.4844,142.1719 Q849.4844,143.4063 850.375,144.2344 Q851.2656,145.0469 852.8594,145.0469 Q853.7969,145.0469 854.4531,144.7969 Q854.8438,144.6406 855.2656,144.2031 Q855.5313,143.9375 855.6719,143.8594 Q855.8281,143.7813 856.0313,143.7813 Q856.3594,143.7813 856.6094,144.0469 Q856.875,144.2969 856.875,144.6406 Q856.875,144.9844 856.5313,145.3906 Q856.0313,145.9688 855.2344,146.2969 Q854.1563,146.75 852.8594,146.75 Q851.3438,146.75 850.1406,146.125 Q849.1563,145.625 848.4688,144.5625 Q847.7813,143.4844 847.7813,142.2031 L847.7813,141.0469 Q847.7813,139.7188 848.3906,138.5781 Q849.0156,137.4219 850.1094,136.8125 Q851.2031,136.1875 852.4375,136.1875 Q853.1719,136.1875 853.8125,136.3594 Q854.4688,136.5156 855.0156,136.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="872.75" y="145.9102">Pharmacie</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="789" x2="984" y1="157" y2="157"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="796" y="165"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="808" y="172.4189">id: Integer</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="796" y="178.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="808" y="186.2549">nom: String</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="796" y="192.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="808" y="200.0908">surfaceCommerciale: Integer</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="796" y="206.5078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="808" y="213.9268">employés: Employé</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="796" y="220.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="171" x="808" y="227.7627">responsable: PharmaciensDiplômés</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="796" y="234.1797"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="808" y="241.5986">siret: String</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="796" y="248.0156"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="808" y="255.4346">stock: Stock</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="789" x2="984" y1="261.8516" y2="261.8516"/><ellipse cx="799" cy="272.8516" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="125" x="808" y="277.2705">getNbrEmployés(): Integer</text><ellipse cx="799" cy="286.6875" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="808" y="291.1064">calculChiffreAffaire(): Double</text><!--MD5=[a4cb0f987c11031dc931233a0e7767af]
+class Stock--><rect codeLine="143" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="75.6719" id="Stock" style="stroke: #A80036; stroke-width: 1.5;" width="291" x="485" y="385.5"/><ellipse cx="610.75" cy="401.5" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M612.9375,403.2656 L608.7969,403.2656 L608.375,404.2969 L608.7969,404.2969 Q609.4063,404.2969 609.6719,404.5313 Q609.9375,404.7656 609.9375,405.1563 Q609.9375,405.5313 609.6719,405.7656 Q609.4063,406 608.7969,406 L606.5,406 Q605.8906,406 605.6406,405.7656 Q605.375,405.5313 605.375,405.1406 Q605.375,404.7656 605.6563,404.5313 Q605.9219,404.2813 606.5469,404.2969 L609.2188,397.6406 L608.1094,397.6406 Q607.5,397.6406 607.2344,397.4063 Q606.9688,397.1719 606.9688,396.7813 Q606.9688,396.4063 607.2344,396.1719 Q607.5,395.9375 608.1094,395.9375 L611.7813,395.9375 L615.1719,404.2969 Q615.7656,404.2969 615.9531,404.4375 Q616.3438,404.7031 616.3438,405.1563 Q616.3438,405.5313 616.0781,405.7656 Q615.8281,406 615.2188,406 L612.9219,406 Q612.3125,406 612.0469,405.7656 Q611.7813,405.5313 611.7813,405.1406 Q611.7813,404.7656 612.0469,404.5313 Q612.3125,404.2969 612.9219,404.2969 L613.3438,404.2969 L612.9375,403.2656 Z M612.2188,401.5625 L610.8594,398.1875 L609.4844,401.5625 L612.2188,401.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="31" x="631.25" y="406.4102">Stock</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="486" x2="775" y1="417.5" y2="417.5"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="493" y="425.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="505" y="432.9189">produits: ProduitPharmaceutique[]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="486" x2="775" y1="439.3359" y2="439.3359"/><ellipse cx="496" cy="450.3359" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="505" y="454.7549">getStocks(): HashMap&lt;ProduitPharmaceutique,Integer&gt;</text><path d="M675,6 L675,65.0547 A0,0 0 0 0 675,65.0547 L790.664,65.0547 L832.439,124.985 L798.664,65.0547 L878,65.0547 A0,0 0 0 0 878,65.0547 L878,16 L868,6 L675,6 A0,0 0 0 0 675,6 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M868,6 L868,16 L878,16 L868,6 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="182" x="681" y="24.4951">getStocks renvoie par exemple:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="112" x="681" y="40.8467">- Doliprane 86 units</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="681" y="57.1982">- Ibuprophène 13 units</text><path d="M913.5,22.5 L913.5,48.8516 A0,0 0 0 0 913.5,48.8516 L985.695,48.8516 L941.311,124.58 L993.695,48.8516 L1081.5,48.8516 A0,0 0 0 0 1081.5,48.8516 L1081.5,32.5 L1071.5,22.5 L913.5,22.5 A0,0 0 0 0 913.5,22.5 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1071.5,22.5 L1071.5,32.5 L1081.5,32.5 L1071.5,22.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="919.5" y="40.9951">Pattern: Abstract Factory</text><!--MD5=[e0b913013eb8f6f2973324bba70a1fd9]
+class PharmacieIndépendante--><rect codeLine="31" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="61.8359" id="PharmacieIndépendante" style="stroke: #A80036; stroke-width: 1.5;" width="193" x="1047" y="392.5"/><ellipse cx="1073.25" cy="408.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1076.0156,404.375 Q1076.1719,404.1563 1076.3594,404.0469 Q1076.5469,403.9375 1076.7656,403.9375 Q1077.1406,403.9375 1077.375,404.2031 Q1077.6094,404.4531 1077.6094,405.0625 L1077.6094,406.5156 Q1077.6094,407.125 1077.375,407.3906 Q1077.1406,407.6563 1076.7656,407.6563 Q1076.4219,407.6563 1076.2188,407.4531 Q1076.0156,407.2656 1075.9063,406.75 Q1075.8594,406.3906 1075.6719,406.2031 Q1075.3438,405.8281 1074.7344,405.6094 Q1074.125,405.3906 1073.5,405.3906 Q1072.7344,405.3906 1072.0938,405.7188 Q1071.4688,406.0469 1070.9688,406.7969 Q1070.4844,407.5469 1070.4844,408.5781 L1070.4844,409.6719 Q1070.4844,410.9063 1071.375,411.7344 Q1072.2656,412.5469 1073.8594,412.5469 Q1074.7969,412.5469 1075.4531,412.2969 Q1075.8438,412.1406 1076.2656,411.7031 Q1076.5313,411.4375 1076.6719,411.3594 Q1076.8281,411.2813 1077.0313,411.2813 Q1077.3594,411.2813 1077.6094,411.5469 Q1077.875,411.7969 1077.875,412.1406 Q1077.875,412.4844 1077.5313,412.8906 Q1077.0313,413.4688 1076.2344,413.7969 Q1075.1563,414.25 1073.8594,414.25 Q1072.3438,414.25 1071.1406,413.625 Q1070.1563,413.125 1069.4688,412.0625 Q1068.7813,410.9844 1068.7813,409.7031 L1068.7813,408.5469 Q1068.7813,407.2188 1069.3906,406.0781 Q1070.0156,404.9219 1071.1094,404.3125 Q1072.2031,403.6875 1073.4375,403.6875 Q1074.1719,403.6875 1074.8125,403.8594 Q1075.4688,404.0156 1076.0156,404.375 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="136" x="1089.75" y="413.4102">PharmacieIndépendante</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1048" x2="1239" y1="424.5" y2="424.5"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1055" y="432.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="1067" y="439.9189">compteBancaire: CompteClassique</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1048" x2="1239" y1="446.3359" y2="446.3359"/><path d="M1109.5,614.5 L1109.5,640.8516 A0,0 0 0 0 1109.5,640.8516 L1243.5,640.8516 A0,0 0 0 0 1243.5,640.8516 L1243.5,624.5 L1233.5,614.5 L1178.48,614.5 L1148.44,454.741 L1170.48,614.5 L1109.5,614.5 A0,0 0 0 0 1109.5,614.5 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1233.5,614.5 L1233.5,624.5 L1243.5,624.5 L1233.5,614.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="113" x="1115.5" y="632.9951">Pattern: Décorateur</text><!--MD5=[9a7dbb4cc3e1b2197e2f2eabdffe2f5e]
+class CompteClassique--><rect codeLine="130" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="61.8359" id="CompteClassique" style="stroke: #A80036; stroke-width: 1.5;" width="281" x="1140" y="786.5"/><ellipse cx="1225.75" cy="802.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1228.5156,798.375 Q1228.6719,798.1563 1228.8594,798.0469 Q1229.0469,797.9375 1229.2656,797.9375 Q1229.6406,797.9375 1229.875,798.2031 Q1230.1094,798.4531 1230.1094,799.0625 L1230.1094,800.5156 Q1230.1094,801.125 1229.875,801.3906 Q1229.6406,801.6563 1229.2656,801.6563 Q1228.9219,801.6563 1228.7188,801.4531 Q1228.5156,801.2656 1228.4063,800.75 Q1228.3594,800.3906 1228.1719,800.2031 Q1227.8438,799.8281 1227.2344,799.6094 Q1226.625,799.3906 1226,799.3906 Q1225.2344,799.3906 1224.5938,799.7188 Q1223.9688,800.0469 1223.4688,800.7969 Q1222.9844,801.5469 1222.9844,802.5781 L1222.9844,803.6719 Q1222.9844,804.9063 1223.875,805.7344 Q1224.7656,806.5469 1226.3594,806.5469 Q1227.2969,806.5469 1227.9531,806.2969 Q1228.3438,806.1406 1228.7656,805.7031 Q1229.0313,805.4375 1229.1719,805.3594 Q1229.3281,805.2813 1229.5313,805.2813 Q1229.8594,805.2813 1230.1094,805.5469 Q1230.375,805.7969 1230.375,806.1406 Q1230.375,806.4844 1230.0313,806.8906 Q1229.5313,807.4688 1228.7344,807.7969 Q1227.6563,808.25 1226.3594,808.25 Q1224.8438,808.25 1223.6406,807.625 Q1222.6563,807.125 1221.9688,806.0625 Q1221.2813,804.9844 1221.2813,803.7031 L1221.2813,802.5469 Q1221.2813,801.2188 1221.8906,800.0781 Q1222.5156,798.9219 1223.6094,798.3125 Q1224.7031,797.6875 1225.9375,797.6875 Q1226.6719,797.6875 1227.3125,797.8594 Q1227.9688,798.0156 1228.5156,798.375 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="1246.25" y="807.4102">CompteClassique</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1141" x2="1420" y1="818.5" y2="818.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1141" x2="1420" y1="826.5" y2="826.5"/><ellipse cx="1151" cy="837.5" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="255" x="1160" y="841.9189">acheterProduit(produit: ProduitPharmaceutique): Void</text><!--MD5=[6788f68b1e22f04228ca52fa8e486bea]
+class PharmacieFranchisée--><rect codeLine="40" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="131.0156" id="PharmacieFranchisée" style="stroke: #A80036; stroke-width: 1.5;" width="198" x="1278.5" y="358"/><ellipse cx="1313.3" cy="374" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1316.0656,369.875 Q1316.2219,369.6563 1316.4094,369.5469 Q1316.5969,369.4375 1316.8156,369.4375 Q1317.1906,369.4375 1317.425,369.7031 Q1317.6594,369.9531 1317.6594,370.5625 L1317.6594,372.0156 Q1317.6594,372.625 1317.425,372.8906 Q1317.1906,373.1563 1316.8156,373.1563 Q1316.4719,373.1563 1316.2688,372.9531 Q1316.0656,372.7656 1315.9563,372.25 Q1315.9094,371.8906 1315.7219,371.7031 Q1315.3938,371.3281 1314.7844,371.1094 Q1314.175,370.8906 1313.55,370.8906 Q1312.7844,370.8906 1312.1438,371.2188 Q1311.5188,371.5469 1311.0188,372.2969 Q1310.5344,373.0469 1310.5344,374.0781 L1310.5344,375.1719 Q1310.5344,376.4063 1311.425,377.2344 Q1312.3156,378.0469 1313.9094,378.0469 Q1314.8469,378.0469 1315.5031,377.7969 Q1315.8938,377.6406 1316.3156,377.2031 Q1316.5813,376.9375 1316.7219,376.8594 Q1316.8781,376.7813 1317.0813,376.7813 Q1317.4094,376.7813 1317.6594,377.0469 Q1317.925,377.2969 1317.925,377.6406 Q1317.925,377.9844 1317.5813,378.3906 Q1317.0813,378.9688 1316.2844,379.2969 Q1315.2063,379.75 1313.9094,379.75 Q1312.3938,379.75 1311.1906,379.125 Q1310.2063,378.625 1309.5188,377.5625 Q1308.8313,376.4844 1308.8313,375.2031 L1308.8313,374.0469 Q1308.8313,372.7188 1309.4406,371.5781 Q1310.0656,370.4219 1311.1594,369.8125 Q1312.2531,369.1875 1313.4875,369.1875 Q1314.2219,369.1875 1314.8625,369.3594 Q1315.5188,369.5156 1316.0656,369.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="122" x="1331.7" y="378.9102">PharmacieFranchisée</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1279.5" x2="1475.5" y1="390" y2="390"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1286.5" y="398"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="1298.5" y="405.4189">franchises: PharmacieFranchisée</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1286.5" y="411.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="1298.5" y="419.2549">pourcentageRoyalties: Double</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1286.5" y="425.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132" x="1298.5" y="433.0908">compteBancaires: Compte[]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="1279.5" x2="1475.5" y1="439.5078" y2="439.5078"/><ellipse cx="1289.5" cy="450.5078" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="1298.5" y="454.9268">getRoyalties(): Double</text><ellipse cx="1289.5" cy="464.3438" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="1298.5" y="468.7627">getMontantPayerRoyalties(): Double</text><ellipse cx="1289.5" cy="478.1797" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="1298.5" y="482.5986">calculChiffreAffaire(): Double</text><!--MD5=[55a9f513ff876a6970678761cb3a400d]
+class Compte--><rect codeLine="123" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="61.8359" id="Compte" style="stroke: #A80036; stroke-width: 1.5;" width="281" x="1730" y="596.5"/><ellipse cx="1844.25" cy="612.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1847.0156,608.375 Q1847.1719,608.1563 1847.3594,608.0469 Q1847.5469,607.9375 1847.7656,607.9375 Q1848.1406,607.9375 1848.375,608.2031 Q1848.6094,608.4531 1848.6094,609.0625 L1848.6094,610.5156 Q1848.6094,611.125 1848.375,611.3906 Q1848.1406,611.6563 1847.7656,611.6563 Q1847.4219,611.6563 1847.2188,611.4531 Q1847.0156,611.2656 1846.9063,610.75 Q1846.8594,610.3906 1846.6719,610.2031 Q1846.3438,609.8281 1845.7344,609.6094 Q1845.125,609.3906 1844.5,609.3906 Q1843.7344,609.3906 1843.0938,609.7188 Q1842.4688,610.0469 1841.9688,610.7969 Q1841.4844,611.5469 1841.4844,612.5781 L1841.4844,613.6719 Q1841.4844,614.9063 1842.375,615.7344 Q1843.2656,616.5469 1844.8594,616.5469 Q1845.7969,616.5469 1846.4531,616.2969 Q1846.8438,616.1406 1847.2656,615.7031 Q1847.5313,615.4375 1847.6719,615.3594 Q1847.8281,615.2813 1848.0313,615.2813 Q1848.3594,615.2813 1848.6094,615.5469 Q1848.875,615.7969 1848.875,616.1406 Q1848.875,616.4844 1848.5313,616.8906 Q1848.0313,617.4688 1847.2344,617.7969 Q1846.1563,618.25 1844.8594,618.25 Q1843.3438,618.25 1842.1406,617.625 Q1841.1563,617.125 1840.4688,616.0625 Q1839.7813,614.9844 1839.7813,613.7031 L1839.7813,612.5469 Q1839.7813,611.2188 1840.3906,610.0781 Q1841.0156,608.9219 1842.1094,608.3125 Q1843.2031,607.6875 1844.4375,607.6875 Q1845.1719,607.6875 1845.8125,607.8594 Q1846.4688,608.0156 1847.0156,608.375 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="1864.75" y="617.4102">Compte</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1731" x2="2010" y1="628.5" y2="628.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1731" x2="2010" y1="636.5" y2="636.5"/><ellipse cx="1741" cy="647.5" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="255" x="1750" y="651.9189">acheterProduit(produit: ProduitPharmaceutique): Void</text><path d="M1278.5,614.5 L1278.5,640.8516 A0,0 0 0 0 1278.5,640.8516 L1412.5,640.8516 A0,0 0 0 0 1412.5,640.8516 L1412.5,624.5 L1402.5,614.5 L1351.46,614.5 L1367.24,489.248 L1343.46,614.5 L1278.5,614.5 A0,0 0 0 0 1278.5,614.5 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1402.5,614.5 L1402.5,624.5 L1412.5,624.5 L1402.5,614.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="113" x="1284.5" y="632.9951">Pattern: Décorateur</text><path d="M1448,549 L1448,706.1641 A0,0 0 0 0 1448,706.1641 L1695,706.1641 A0,0 0 0 0 1695,706.1641 L1695,559 L1685,549 L1500.78,549 L1439.68,489.248 L1492.78,549 L1448,549 A0,0 0 0 0 1448,549 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1685,549 L1685,559 L1695,559 L1685,549 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="1454" y="567.4951">- 2 à 4 pharmacies : 1 % CA et -2,5 %</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="192" x="1454" y="583.8467">prix d’achat des produits pour les</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="159" x="1454" y="600.1982">pharmacies qu’elles gèrent.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="218" x="1454" y="616.5498">- 5 à 10 pharmacies : 2 % CA et -5 %</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="192" x="1454" y="632.9014">prix d’achat des produits pour les</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="159" x="1458" y="649.2529">pharmacies qu’elles gèrent.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="215" x="1454" y="665.6045">- +10 pharmacies : 3 % CA et -7.5 %</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="192" x="1454" y="681.9561">prix d’achat des produits pour les</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="159" x="1454" y="698.3076">pharmacies qu’elles gèrent.</text><!--MD5=[734cc31fc5272f1c97fbb7d14fe02cf3]
+class ProduitPharmaceutique--><rect codeLine="68" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="131.0156" id="ProduitPharmaceutique" style="stroke: #A80036; stroke-width: 1.5;" width="187" x="450" y="562"/><ellipse cx="476.25" cy="578" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M479.0156,573.875 Q479.1719,573.6563 479.3594,573.5469 Q479.5469,573.4375 479.7656,573.4375 Q480.1406,573.4375 480.375,573.7031 Q480.6094,573.9531 480.6094,574.5625 L480.6094,576.0156 Q480.6094,576.625 480.375,576.8906 Q480.1406,577.1563 479.7656,577.1563 Q479.4219,577.1563 479.2188,576.9531 Q479.0156,576.7656 478.9063,576.25 Q478.8594,575.8906 478.6719,575.7031 Q478.3438,575.3281 477.7344,575.1094 Q477.125,574.8906 476.5,574.8906 Q475.7344,574.8906 475.0938,575.2188 Q474.4688,575.5469 473.9688,576.2969 Q473.4844,577.0469 473.4844,578.0781 L473.4844,579.1719 Q473.4844,580.4063 474.375,581.2344 Q475.2656,582.0469 476.8594,582.0469 Q477.7969,582.0469 478.4531,581.7969 Q478.8438,581.6406 479.2656,581.2031 Q479.5313,580.9375 479.6719,580.8594 Q479.8281,580.7813 480.0313,580.7813 Q480.3594,580.7813 480.6094,581.0469 Q480.875,581.2969 480.875,581.6406 Q480.875,581.9844 480.5313,582.3906 Q480.0313,582.9688 479.2344,583.2969 Q478.1563,583.75 476.8594,583.75 Q475.3438,583.75 474.1406,583.125 Q473.1563,582.625 472.4688,581.5625 Q471.7813,580.4844 471.7813,579.2031 L471.7813,578.0469 Q471.7813,576.7188 472.3906,575.5781 Q473.0156,574.4219 474.1094,573.8125 Q475.2031,573.1875 476.4375,573.1875 Q477.1719,573.1875 477.8125,573.3594 Q478.4688,573.5156 479.0156,573.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="130" x="492.75" y="582.9102">ProduitPharmaceutique</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="451" x2="636" y1="594" y2="594"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="458" y="602"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="470" y="609.4189">id: Integer</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="458" y="615.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="470" y="623.2549">nom: String</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="458" y="629.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="470" y="637.0908">type: TypeProduitPharmaceutique</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="458" y="643.5078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="470" y="650.9268">prixAchat: Double</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="458" y="657.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="470" y="664.7627">datePeremption: Date</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="451" x2="636" y1="671.1797" y2="671.1797"/><ellipse cx="461" cy="682.1797" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="470" y="686.5986">calculPrixVente(): Double</text><path d="M832,614.5 L832,640.8516 L1003,640.8516 L1003,624.5 L993,614.5 L832,614.5 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M993,614.5 L993,624.5 L1003,624.5 L993,614.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="150" x="838" y="632.9951">Pattern: Template Method</text><!--MD5=[5af42e8deca470f7497af2ac1ff748b8]
+class Employé--><rect codeLine="82" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="103.3438" id="Employé" style="stroke: #A80036; stroke-width: 1.5;" width="100" x="314.5" y="372"/><ellipse cx="338.5" cy="388" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M341.2656,383.875 Q341.4219,383.6563 341.6094,383.5469 Q341.7969,383.4375 342.0156,383.4375 Q342.3906,383.4375 342.625,383.7031 Q342.8594,383.9531 342.8594,384.5625 L342.8594,386.0156 Q342.8594,386.625 342.625,386.8906 Q342.3906,387.1563 342.0156,387.1563 Q341.6719,387.1563 341.4688,386.9531 Q341.2656,386.7656 341.1563,386.25 Q341.1094,385.8906 340.9219,385.7031 Q340.5938,385.3281 339.9844,385.1094 Q339.375,384.8906 338.75,384.8906 Q337.9844,384.8906 337.3438,385.2188 Q336.7188,385.5469 336.2188,386.2969 Q335.7344,387.0469 335.7344,388.0781 L335.7344,389.1719 Q335.7344,390.4063 336.625,391.2344 Q337.5156,392.0469 339.1094,392.0469 Q340.0469,392.0469 340.7031,391.7969 Q341.0938,391.6406 341.5156,391.2031 Q341.7813,390.9375 341.9219,390.8594 Q342.0781,390.7813 342.2813,390.7813 Q342.6094,390.7813 342.8594,391.0469 Q343.125,391.2969 343.125,391.6406 Q343.125,391.9844 342.7813,392.3906 Q342.2813,392.9688 341.4844,393.2969 Q340.4063,393.75 339.1094,393.75 Q337.5938,393.75 336.3906,393.125 Q335.4063,392.625 334.7188,391.5625 Q334.0313,390.4844 334.0313,389.2031 L334.0313,388.0469 Q334.0313,386.7188 334.6406,385.5781 Q335.2656,384.4219 336.3594,383.8125 Q337.4531,383.1875 338.6875,383.1875 Q339.4219,383.1875 340.0625,383.3594 Q340.7188,383.5156 341.2656,383.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="354.5" y="392.9102">Employé</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="315.5" x2="413.5" y1="404" y2="404"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="322.5" y="412"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="334.5" y="419.4189">nom: String</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="322.5" y="425.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="334.5" y="433.2549">prénom: String</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="322.5" y="439.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="334.5" y="447.0908">adresse: String</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="322.5" y="453.5078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="56" x="334.5" y="460.9268">type: Métier</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="315.5" x2="413.5" y1="467.3438" y2="467.3438"/><!--MD5=[ccfb5c03a186aaeac36875480ef39d69]
+class Métier--><rect codeLine="91" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="75.6719" id="Métier" style="stroke: #A80036; stroke-width: 1.5;" width="101" x="297" y="589.5"/><ellipse cx="328.2" cy="605.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M330.9656,601.375 Q331.1219,601.1563 331.3094,601.0469 Q331.4969,600.9375 331.7156,600.9375 Q332.0906,600.9375 332.325,601.2031 Q332.5594,601.4531 332.5594,602.0625 L332.5594,603.5156 Q332.5594,604.125 332.325,604.3906 Q332.0906,604.6563 331.7156,604.6563 Q331.3719,604.6563 331.1688,604.4531 Q330.9656,604.2656 330.8563,603.75 Q330.8094,603.3906 330.6219,603.2031 Q330.2938,602.8281 329.6844,602.6094 Q329.075,602.3906 328.45,602.3906 Q327.6844,602.3906 327.0438,602.7188 Q326.4188,603.0469 325.9188,603.7969 Q325.4344,604.5469 325.4344,605.5781 L325.4344,606.6719 Q325.4344,607.9063 326.325,608.7344 Q327.2156,609.5469 328.8094,609.5469 Q329.7469,609.5469 330.4031,609.2969 Q330.7938,609.1406 331.2156,608.7031 Q331.4813,608.4375 331.6219,608.3594 Q331.7781,608.2813 331.9813,608.2813 Q332.3094,608.2813 332.5594,608.5469 Q332.825,608.7969 332.825,609.1406 Q332.825,609.4844 332.4813,609.8906 Q331.9813,610.4688 331.1844,610.7969 Q330.1063,611.25 328.8094,611.25 Q327.2938,611.25 326.0906,610.625 Q325.1063,610.125 324.4188,609.0625 Q323.7313,607.9844 323.7313,606.7031 L323.7313,605.5469 Q323.7313,604.2188 324.3406,603.0781 Q324.9656,601.9219 326.0594,601.3125 Q327.1531,600.6875 328.3875,600.6875 Q329.1219,600.6875 329.7625,600.8594 Q330.4188,601.0156 330.9656,601.375 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="345.8" y="610.4102">Métier</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="298" x2="397" y1="621.5" y2="621.5"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="305" y="629.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="317" y="636.9189">id: Integer</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="397" y1="643.3359" y2="643.3359"/><ellipse cx="308" cy="654.3359" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="317" y="658.7549">calculeSalaire()</text><!--MD5=[951690af72032316a4c400942146f2b7]
+class PharmaciensDiplômés--><rect codeLine="97" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="103.3438" id="PharmaciensDiplômés" style="stroke: #A80036; stroke-width: 1.5;" width="160" x="37.5" y="766"/><ellipse cx="52.5" cy="782" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M55.2656,777.875 Q55.4219,777.6563 55.6094,777.5469 Q55.7969,777.4375 56.0156,777.4375 Q56.3906,777.4375 56.625,777.7031 Q56.8594,777.9531 56.8594,778.5625 L56.8594,780.0156 Q56.8594,780.625 56.625,780.8906 Q56.3906,781.1563 56.0156,781.1563 Q55.6719,781.1563 55.4688,780.9531 Q55.2656,780.7656 55.1563,780.25 Q55.1094,779.8906 54.9219,779.7031 Q54.5938,779.3281 53.9844,779.1094 Q53.375,778.8906 52.75,778.8906 Q51.9844,778.8906 51.3438,779.2188 Q50.7188,779.5469 50.2188,780.2969 Q49.7344,781.0469 49.7344,782.0781 L49.7344,783.1719 Q49.7344,784.4063 50.625,785.2344 Q51.5156,786.0469 53.1094,786.0469 Q54.0469,786.0469 54.7031,785.7969 Q55.0938,785.6406 55.5156,785.2031 Q55.7813,784.9375 55.9219,784.8594 Q56.0781,784.7813 56.2813,784.7813 Q56.6094,784.7813 56.8594,785.0469 Q57.125,785.2969 57.125,785.6406 Q57.125,785.9844 56.7813,786.3906 Q56.2813,786.9688 55.4844,787.2969 Q54.4063,787.75 53.1094,787.75 Q51.5938,787.75 50.3906,787.125 Q49.4063,786.625 48.7188,785.5625 Q48.0313,784.4844 48.0313,783.2031 L48.0313,782.0469 Q48.0313,780.7188 48.6406,779.5781 Q49.2656,778.4219 50.3594,777.8125 Q51.4531,777.1875 52.6875,777.1875 Q53.4219,777.1875 54.0625,777.3594 Q54.7188,777.5156 55.2656,777.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="128" x="66.5" y="786.9102">PharmaciensDiplômés</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="38.5" x2="196.5" y1="798" y2="798"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="45.5" y="806"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="57.5" y="813.4189">salaire: Double</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="45.5" y="819.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="57.5" y="827.2549">nbrVentes: Integer</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="38.5" x2="196.5" y1="833.6719" y2="833.6719"/><ellipse cx="48.5" cy="844.6719" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="57.5" y="849.0908">calculePrime()</text><ellipse cx="48.5" cy="858.5078" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="57.5" y="862.9268">calculeSalaire()</text><path d="M6,945.5 L6,971.8516 A0,0 0 0 0 6,971.8516 L199,971.8516 A0,0 0 0 0 199,971.8516 L199,955.5 L189,945.5 L107.8181,945.5 L112.042,869.075 L99.8181,945.5 L6,945.5 A0,0 0 0 0 6,945.5 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M189,945.5 L189,955.5 L199,955.5 L189,945.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="12" y="963.9951">1% du nombre total de ventes</text><!--MD5=[0e2772166070fa0d8323bd204b449ad4]
+class PréparateursCommande--><rect codeLine="109" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="103.3438" id="PréparateursCommande" style="stroke: #A80036; stroke-width: 1.5;" width="170" x="262.5" y="766"/><ellipse cx="277.5" cy="782" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M280.2656,777.875 Q280.4219,777.6563 280.6094,777.5469 Q280.7969,777.4375 281.0156,777.4375 Q281.3906,777.4375 281.625,777.7031 Q281.8594,777.9531 281.8594,778.5625 L281.8594,780.0156 Q281.8594,780.625 281.625,780.8906 Q281.3906,781.1563 281.0156,781.1563 Q280.6719,781.1563 280.4688,780.9531 Q280.2656,780.7656 280.1563,780.25 Q280.1094,779.8906 279.9219,779.7031 Q279.5938,779.3281 278.9844,779.1094 Q278.375,778.8906 277.75,778.8906 Q276.9844,778.8906 276.3438,779.2188 Q275.7188,779.5469 275.2188,780.2969 Q274.7344,781.0469 274.7344,782.0781 L274.7344,783.1719 Q274.7344,784.4063 275.625,785.2344 Q276.5156,786.0469 278.1094,786.0469 Q279.0469,786.0469 279.7031,785.7969 Q280.0938,785.6406 280.5156,785.2031 Q280.7813,784.9375 280.9219,784.8594 Q281.0781,784.7813 281.2813,784.7813 Q281.6094,784.7813 281.8594,785.0469 Q282.125,785.2969 282.125,785.6406 Q282.125,785.9844 281.7813,786.3906 Q281.2813,786.9688 280.4844,787.2969 Q279.4063,787.75 278.1094,787.75 Q276.5938,787.75 275.3906,787.125 Q274.4063,786.625 273.7188,785.5625 Q273.0313,784.4844 273.0313,783.2031 L273.0313,782.0469 Q273.0313,780.7188 273.6406,779.5781 Q274.2656,778.4219 275.3594,777.8125 Q276.4531,777.1875 277.6875,777.1875 Q278.4219,777.1875 279.0625,777.3594 Q279.7188,777.5156 280.2656,777.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="138" x="291.5" y="786.9102">PréparateursCommande</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="263.5" x2="431.5" y1="798" y2="798"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="270.5" y="806"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="282.5" y="813.4189">quotitéHorraires: Double</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="270.5" y="819.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="282.5" y="827.2549">coutHeure: Double</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="270.5" y="833.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="282.5" y="841.0908">ancienneté: Double</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="263.5" x2="431.5" y1="847.5078" y2="847.5078"/><ellipse cx="273.5" cy="858.5078" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="282.5" y="862.9268">calculeSalaire()</text><path d="M234.5,929 L234.5,988.0547 A0,0 0 0 0 234.5,988.0547 L492.5,988.0547 A0,0 0 0 0 492.5,988.0547 L492.5,939 L482.5,929 L364.218,929 L353.322,869.075 L356.218,929 L234.5,929 A0,0 0 0 0 234.5,929 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M482.5,929 L482.5,939 L492.5,939 L482.5,929 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="203" x="240.5" y="947.4951">- moins de 3 ans : aucun avantage.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="237" x="240.5" y="963.8467">- entre 3 et 6 ans : 10 % supplémentaire.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="214" x="240.5" y="980.1982">- après 6 ans : 15 % supplémentaire.</text><path d="M1681,804.5 L1681,830.8516 A0,0 0 0 0 1681,830.8516 L1816,830.8516 A0,0 0 0 0 1816,830.8516 L1816,814.5 L1806,804.5 L1760.33,804.5 L1850.9,658.705 L1752.33,804.5 L1681,804.5 A0,0 0 0 0 1681,804.5 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1806,804.5 L1806,814.5 L1816,814.5 L1806,804.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="114" x="1687" y="822.9951">Vérifier la solvabilité</text><!--MD5=[cc3187bf99e9df52b3826cb1f847bad0]
+class CompteFranchisé--><rect codeLine="135" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="61.8359" id="CompteFranchisé" style="stroke: #A80036; stroke-width: 1.5;" width="281" x="1851" y="786.5"/><ellipse cx="1937.75" cy="802.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1940.5156,798.375 Q1940.6719,798.1563 1940.8594,798.0469 Q1941.0469,797.9375 1941.2656,797.9375 Q1941.6406,797.9375 1941.875,798.2031 Q1942.1094,798.4531 1942.1094,799.0625 L1942.1094,800.5156 Q1942.1094,801.125 1941.875,801.3906 Q1941.6406,801.6563 1941.2656,801.6563 Q1940.9219,801.6563 1940.7188,801.4531 Q1940.5156,801.2656 1940.4063,800.75 Q1940.3594,800.3906 1940.1719,800.2031 Q1939.8438,799.8281 1939.2344,799.6094 Q1938.625,799.3906 1938,799.3906 Q1937.2344,799.3906 1936.5938,799.7188 Q1935.9688,800.0469 1935.4688,800.7969 Q1934.9844,801.5469 1934.9844,802.5781 L1934.9844,803.6719 Q1934.9844,804.9063 1935.875,805.7344 Q1936.7656,806.5469 1938.3594,806.5469 Q1939.2969,806.5469 1939.9531,806.2969 Q1940.3438,806.1406 1940.7656,805.7031 Q1941.0313,805.4375 1941.1719,805.3594 Q1941.3281,805.2813 1941.5313,805.2813 Q1941.8594,805.2813 1942.1094,805.5469 Q1942.375,805.7969 1942.375,806.1406 Q1942.375,806.4844 1942.0313,806.8906 Q1941.5313,807.4688 1940.7344,807.7969 Q1939.6563,808.25 1938.3594,808.25 Q1936.8438,808.25 1935.6406,807.625 Q1934.6563,807.125 1933.9688,806.0625 Q1933.2813,804.9844 1933.2813,803.7031 L1933.2813,802.5469 Q1933.2813,801.2188 1933.8906,800.0781 Q1934.5156,798.9219 1935.6094,798.3125 Q1936.7031,797.6875 1937.9375,797.6875 Q1938.6719,797.6875 1939.3125,797.8594 Q1939.9688,798.0156 1940.5156,798.375 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="99" x="1958.25" y="807.4102">CompteFranchisé</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1852" x2="2131" y1="818.5" y2="818.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1852" x2="2131" y1="826.5" y2="826.5"/><ellipse cx="1862" cy="837.5" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="255" x="1871" y="841.9189">acheterProduit(produit: ProduitPharmaceutique): Void</text><path d="M1948.5,945.5 L1948.5,971.8516 A0,0 0 0 0 1948.5,971.8516 L2034.5,971.8516 A0,0 0 0 0 2034.5,971.8516 L2034.5,955.5 L2024.5,945.5 L1995.5,945.5 L1991.5,848.661 L1987.5,945.5 L1948.5,945.5 A0,0 0 0 0 1948.5,945.5 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2024.5,945.5 L2024.5,955.5 L2034.5,955.5 L2024.5,945.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="65" x="1954.5" y="963.9951">Réductions</text><path d="M811.5,402 L811.5,419.5 L776.214,423.5 L811.5,427.5 L811.5,444.7031 A0,0 0 0 0 811.5,444.7031 L1011.5,444.7031 A0,0 0 0 0 1011.5,444.7031 L1011.5,412 L1001.5,402 L811.5,402 A0,0 0 0 0 811.5,402 " fill="#FBFB77" filter="url(#f1x8op6ts6jtmr)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1001.5,402 L1001.5,412 L1011.5,412 L1001.5,402 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="817.5" y="420.4951">Pattern: Strategy (évoluer)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="179" x="817.5" y="436.8467">Pattern: Observable (paiement)</text><!--MD5=[96b0a327ef8d693467b25573c818958c]
+class StockNumérique--><rect codeLine="154" fill="#FEFECE" filter="url(#f1x8op6ts6jtmr)" height="48" id="StockNumérique" style="stroke: #A80036; stroke-width: 1.5;" width="124" x="672.5" y="603.5"/><ellipse cx="687.5" cy="619.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M690.2656,615.375 Q690.4219,615.1563 690.6094,615.0469 Q690.7969,614.9375 691.0156,614.9375 Q691.3906,614.9375 691.625,615.2031 Q691.8594,615.4531 691.8594,616.0625 L691.8594,617.5156 Q691.8594,618.125 691.625,618.3906 Q691.3906,618.6563 691.0156,618.6563 Q690.6719,618.6563 690.4688,618.4531 Q690.2656,618.2656 690.1563,617.75 Q690.1094,617.3906 689.9219,617.2031 Q689.5938,616.8281 688.9844,616.6094 Q688.375,616.3906 687.75,616.3906 Q686.9844,616.3906 686.3438,616.7188 Q685.7188,617.0469 685.2188,617.7969 Q684.7344,618.5469 684.7344,619.5781 L684.7344,620.6719 Q684.7344,621.9063 685.625,622.7344 Q686.5156,623.5469 688.1094,623.5469 Q689.0469,623.5469 689.7031,623.2969 Q690.0938,623.1406 690.5156,622.7031 Q690.7813,622.4375 690.9219,622.3594 Q691.0781,622.2813 691.2813,622.2813 Q691.6094,622.2813 691.8594,622.5469 Q692.125,622.7969 692.125,623.1406 Q692.125,623.4844 691.7813,623.8906 Q691.2813,624.4688 690.4844,624.7969 Q689.4063,625.25 688.1094,625.25 Q686.5938,625.25 685.3906,624.625 Q684.4063,624.125 683.7188,623.0625 Q683.0313,621.9844 683.0313,620.7031 L683.0313,619.5469 Q683.0313,618.2188 683.6406,617.0781 Q684.2656,615.9219 685.3594,615.3125 Q686.4531,614.6875 687.6875,614.6875 Q688.4219,614.6875 689.0625,614.8594 Q689.7188,615.0156 690.2656,615.375 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="92" x="701.5" y="624.4102">StockNumérique</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="673.5" x2="795.5" y1="635.5" y2="635.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="673.5" x2="795.5" y1="643.5" y2="643.5"/><!--MD5=[368c0a6a307cce8359ac6c81bafd0abb]
+reverse link Pharmacie to Stock--><path codeLine="21" d="M777.407,301.99 C741.776,331.219 704.146,362.087 675.891,385.265 " fill="none" id="Pharmacie-backto-Stock" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="787.89,293.391,780.7142,294.1039,778.6124,301.0019,785.7882,300.289,787.89,293.391" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="773.0722" y="296.5751">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="676.3528" y="374.585">1</text><!--MD5=[fc7b4969ab3e187fe1c33b952a017bbd]
+reverse link Pharmacie to PharmacieIndépendante--><path codeLine="37" d="M1000.775,305.876 C1038.95,337.07 1078.82,369.649 1106.69,392.419 " fill="none" id="Pharmacie-backto-PharmacieIndépendante" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="996.186,311.166,985.128,293.091,1005.044,300.325,996.186,311.166" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b92c4b71b1d40f49bb195fbf82dc8789]
+reverse link PharmacieIndépendante to CompteClassique--><path codeLine="38" d="M1119.39,466.204 C1089.52,523.883 1047.63,629.534 1091.5,706 C1112.87,743.254 1152.2,769.15 1189.47,786.456 " fill="none" id="PharmacieIndépendante-backto-CompteClassique" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1125.54,454.652,1119.1897,458.0687,1119.9011,465.2446,1126.2514,461.8279,1125.54,454.652" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="1114.3151" y="475.9059">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="1161.7916" y="775.4666">1</text><!--MD5=[d133bbb54b2a9e405791ba699c34b5bf]
+reverse link Pharmacie to PharmacieFranchisée--><path codeLine="49" d="M1004.276,254.583 C1077.97,281.919 1174.36,319.52 1257.5,358 C1264.37,361.179 1271.4,364.571 1278.43,368.073 " fill="none" id="Pharmacie-backto-PharmacieFranchisée" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1001.432,260.995,985.09,247.507,1006.28,247.86,1001.432,260.995" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5082de7dc01b29290f6828e6ca3450e7]
+reverse link PharmacieFranchisée to PharmacieFranchisée--><path codeLine="50" d="M1481.66,387.854 C1499.3,392.771 1511.5,404.653 1511.5,423.5 C1511.5,444.119 1496.9,456.402 1476.55,460.349 " fill="none" id="PharmacieFranchisée-backto-PharmacieFranchisée" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1476.55,386.651,1484.3973,392.6024,1481.4176,387.794,1486.2261,384.8143,1476.55,386.651" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="1484.6423" y="380.5856">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="1484.4015" y="477.2907">1</text><!--MD5=[2e8d449c7372165768007f122b83857c]
+reverse link PharmacieFranchisée to Compte--><path codeLine="51" d="M1489.19,462.846 C1554.86,486.172 1639.13,517.467 1712.5,549 C1746.18,563.477 1783.01,581.411 1812.62,596.379 " fill="none" id="PharmacieFranchisée-backto-Compte" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1476.74,458.437,1481.0654,464.2068,1488.055,462.4333,1483.7296,456.6635,1476.74,458.437" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="1484.606" y="458.0073">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="1795.1666" y="585.8586">*</text><!--MD5=[e7f38570af49513ceea7a0a7de734499]
+link ProduitPharmaceutique to GMN31--><path d="M603.734,561.756 C623.596,544.474 647.046,528.126 672,519 C723.758,500.071 744.509,499.356 796,519 C846.731,538.355 889.709,589.709 908.028,614.176 " fill="none" id="ProduitPharmaceutique-GMN31" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><!--MD5=[e62b0915c9f7ef334e4d4f196b7165bd]
+reverse link ProduitPharmaceutique to TypeProduitPharmaceutique--><path codeLine="80" d="M550.944,706.253 C552.874,726.405 554.902,747.585 556.659,765.934 " fill="none" id="ProduitPharmaceutique-backto-TypeProduitPharmaceutique" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="549.695,693.199,546.2848,699.5528,550.8382,705.1444,554.2484,698.7906,549.695,693.199" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9cd7c132ff18ddb217510c7c77960ffd]
+reverse link Pharmacie to Employé--><path codeLine="88" d="M775.22,243.648 C689.182,269.5 568.168,309.762 467.5,358 C449.615,366.57 430.977,377.543 414.55,387.999 " fill="none" id="Pharmacie-backto-Employé" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="787.919,239.86,781.0261,237.7417,776.4195,243.2897,783.3125,245.408,787.919,239.86" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[f6d305e75a60f1225d93c48bd36b79ba]
+reverse link Employé to Métier--><path codeLine="89" d="M359.109,488.564 C356.309,521.83 352.987,561.296 350.616,589.472 " fill="none" id="Employé-backto-Métier" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="360.232,475.212,355.743,480.8555,359.2259,487.1697,363.7148,481.5263,360.232,475.212" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[08b33edda846318b3485b7e70fc52aed]
+reverse link Métier to PharmaciensDiplômés--><path codeLine="107" d="M286.504,678.358 C253.417,705.402 212.615,738.754 179.391,765.911 " fill="none" id="Métier-backto-PharmaciensDiplômés" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="282.144,672.88,302.059,665.643,291.004,683.72,282.144,672.88" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0b88066b4f09dc68ca71ccc3d8345c3e]
+reverse link Métier to PréparateursCommande--><path codeLine="121" d="M347.5,685.88 C347.5,711.415 347.5,741.223 347.5,765.911 " fill="none" id="Métier-backto-PréparateursCommande" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="340.5,685.643,347.5,665.643,354.5,685.643,340.5,685.643" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d38443644a9fd3e587563853a8c8edae]
+reverse link Compte to CompteClassique--><path codeLine="133" d="M1798.14,667.882 C1771.71,681.219 1741.24,695.403 1712.5,706 C1617.53,741.014 1506.88,769.087 1421.34,788.175 " fill="none" id="Compte-backto-CompteClassique" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1795.16,661.54,1816.15,658.613,1801.57,673.988,1795.16,661.54" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4676abff5f122058b90ef7dacf138f19]
+reverse link Compte to CompteFranchisé--><path codeLine="141" d="M1900.86,675.665 C1923.19,710.372 1952.9,756.522 1972.11,786.37 " fill="none" id="Compte-backto-CompteFranchisé" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1894.88,679.312,1889.94,658.705,1906.65,671.735,1894.88,679.312" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a4a04da952242f77784e932cdfb511a7]
+reverse link Stock to ProduitPharmaceutique--><path codeLine="152" d="M609.343,473.624 C597.911,500.167 583.652,533.273 571.33,561.883 " fill="none" id="Stock-backto-ProduitPharmaceutique" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="614.543,461.55,608.496,465.4786,609.7966,472.5714,615.8436,468.6428,614.543,461.55" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="606.4861" y="482.7284">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="569.1005" y="551.3446">*</text><!--MD5=[b393f2de7e19c1d810ce49fa4b5675f9]
+reverse link Stock to StockNumérique--><path codeLine="157" d="M658.793,479.454 C679.68,520.023 707.06,573.204 722.518,603.226 " fill="none" id="Stock-backto-StockNumérique" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="652.507,482.536,649.575,461.55,664.954,476.127,652.507,482.536" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d5340c1120270b64bf609fa233b0ca7b]
+@startuml Overview
+
+Enum TypeProduitPharmaceutique {
+    - vaccin
+    - medicament
+    - produit de beaute
+    - complements alimentaires
+}
+
+class Pharmacie {
+    - id: Integer
+    - nom: String
+    - surfaceCommerciale: Integer
+    - employés: Employé
+    - responsable: PharmaciensDiplômés
+    - siret: String
+    - stock: Stock
+    - - -
+    + getNbrEmployés(): Integer
+    + calculChiffreAffaire(): Double
+}
+Pharmacie "1" o- - "1" Stock
+note top of Pharmacie
+getStocks renvoie par exemple:
+- Doliprane 86 units
+- Ibuprophène 13 units
+end note
+note top of Pharmacie
+Pattern: Abstract Factory
+end note
+
+class PharmacieIndépendante {
+    - compteBancaire: CompteClassique
+}
+note bottom of PharmacieIndépendante
+Pattern: Décorateur
+end note
+Pharmacie <|- - PharmacieIndépendante
+PharmacieIndépendante "1" o- - "1" CompteClassique
+
+class PharmacieFranchisée {
+    - franchises: PharmacieFranchisée
+    - pourcentageRoyalties: Double
+    - compteBancaires: Compte[]
+    - - -
+    + getRoyalties(): Double
+    + getMontantPayerRoyalties(): Double
+    + calculChiffreAffaire(): Double
+}
+Pharmacie <|- - PharmacieFranchisée
+PharmacieFranchisée "*" <- - "1" PharmacieFranchisée
+PharmacieFranchisée "1" o- - "*" Compte
+note bottom of PharmacieFranchisée
+Pattern: Décorateur
+end note
+note bottom of PharmacieFranchisée
+- 2 à 4 pharmacies : 1 % CA et -2,5 % 
+prix d’achat des produits pour les 
+pharmacies qu’elles gèrent.
+- 5 à 10 pharmacies : 2 % CA et -5 % 
+prix d’achat des produits pour les
+ pharmacies qu’elles gèrent.
+- +10 pharmacies : 3 % CA et -7.5 % 
+prix d’achat des produits pour les 
+pharmacies qu’elles gèrent.
+end note
+
+' #LightSteelBlue
+class ProduitPharmaceutique {
+    - id: Integer
+    - nom: String
+    - type: TypeProduitPharmaceutique
+    - prixAchat: Double
+    - datePeremption: Date
+    - - -
+    + calculPrixVente(): Double
+}
+note right of ProduitPharmaceutique
+Pattern: Template Method
+end note
+ProduitPharmaceutique o- - TypeProduitPharmaceutique
+
+class Employé {
+    - nom: String
+    - prénom: String
+    - adresse: String
+    - type: Métier
+}
+Pharmacie o- - Employé
+Employé o- - Métier
+
+Class Métier {
+    - id: Integer
+    - - -
+    + calculeSalaire()
+}
+
+class PharmaciensDiplômés {
+    - salaire: Double
+    - nbrVentes: Integer
+    - - -
+    + calculePrime()
+    + calculeSalaire()
+}
+note bottom of PharmaciensDiplômés
+1% du nombre total de ventes
+end note
+Métier <|- - PharmaciensDiplômés
+
+class PréparateursCommande {
+    - quotitéHorraires: Double
+    - coutHeure: Double
+    - ancienneté: Double
+    - - -
+    + calculeSalaire()
+}
+note bottom of PréparateursCommande
+- moins de 3 ans : aucun avantage.
+- entre 3 et 6 ans : 10 % supplémentaire.
+- après 6 ans : 15 % supplémentaire. 
+end note
+Métier <|- - PréparateursCommande
+
+class Compte {
+    + acheterProduit(produit: ProduitPharmaceutique): Void
+}
+note bottom of Compte
+Vérifier la solvabilité
+end note
+
+class CompteClassique {
+    + acheterProduit(produit: ProduitPharmaceutique): Void    
+}
+Compte <|- - CompteClassique
+
+class CompteFranchisé {
+    + acheterProduit(produit: ProduitPharmaceutique): Void
+}
+note bottom of CompteFranchisé
+Réductions
+end note
+Compte <|- - CompteFranchisé
+
+abstract class Stock {
+    - produits: ProduitPharmaceutique[]
+    - - -
+    + getStocks(): HashMap<ProduitPharmaceutique,Integer>
+}
+note left of Stock
+Pattern: Strategy (évoluer)
+Pattern: Observable (paiement)
+end note
+Stock "*" o- - "*" ProduitPharmaceutique
+
+class StockNumérique {
+
+}
+Stock <|- - StockNumérique
+
+@enduml
+
+@startuml Overview
+
+Enum TypeProduitPharmaceutique {
+    - vaccin
+    - medicament
+    - produit de beaute
+    - complements alimentaires
+}
+
+class Pharmacie {
+    - id: Integer
+    - nom: String
+    - surfaceCommerciale: Integer
+    - employés: Employé
+    - responsable: PharmaciensDiplômés
+    - siret: String
+    - stock: Stock
+    - - -
+    + getNbrEmployés(): Integer
+    + calculChiffreAffaire(): Double
+}
+Pharmacie "1" o- - "1" Stock
+note top of Pharmacie
+getStocks renvoie par exemple:
+- Doliprane 86 units
+- Ibuprophène 13 units
+end note
+note top of Pharmacie
+Pattern: Abstract Factory
+end note
+
+class PharmacieIndépendante {
+    - compteBancaire: CompteClassique
+}
+note bottom of PharmacieIndépendante
+Pattern: Décorateur
+end note
+Pharmacie <|- - PharmacieIndépendante
+PharmacieIndépendante "1" o- - "1" CompteClassique
+
+class PharmacieFranchisée {
+    - franchises: PharmacieFranchisée
+    - pourcentageRoyalties: Double
+    - compteBancaires: Compte[]
+    - - -
+    + getRoyalties(): Double
+    + getMontantPayerRoyalties(): Double
+    + calculChiffreAffaire(): Double
+}
+Pharmacie <|- - PharmacieFranchisée
+PharmacieFranchisée "*" <- - "1" PharmacieFranchisée
+PharmacieFranchisée "1" o- - "*" Compte
+note bottom of PharmacieFranchisée
+Pattern: Décorateur
+end note
+note bottom of PharmacieFranchisée
+- 2 à 4 pharmacies : 1 % CA et -2,5 % 
+prix d’achat des produits pour les 
+pharmacies qu’elles gèrent.
+- 5 à 10 pharmacies : 2 % CA et -5 % 
+prix d’achat des produits pour les
+ pharmacies qu’elles gèrent.
+- +10 pharmacies : 3 % CA et -7.5 % 
+prix d’achat des produits pour les 
+pharmacies qu’elles gèrent.
+end note
+
+class ProduitPharmaceutique {
+    - id: Integer
+    - nom: String
+    - type: TypeProduitPharmaceutique
+    - prixAchat: Double
+    - datePeremption: Date
+    - - -
+    + calculPrixVente(): Double
+}
+note right of ProduitPharmaceutique
+Pattern: Template Method
+end note
+ProduitPharmaceutique o- - TypeProduitPharmaceutique
+
+class Employé {
+    - nom: String
+    - prénom: String
+    - adresse: String
+    - type: Métier
+}
+Pharmacie o- - Employé
+Employé o- - Métier
+
+Class Métier {
+    - id: Integer
+    - - -
+    + calculeSalaire()
+}
+
+class PharmaciensDiplômés {
+    - salaire: Double
+    - nbrVentes: Integer
+    - - -
+    + calculePrime()
+    + calculeSalaire()
+}
+note bottom of PharmaciensDiplômés
+1% du nombre total de ventes
+end note
+Métier <|- - PharmaciensDiplômés
+
+class PréparateursCommande {
+    - quotitéHorraires: Double
+    - coutHeure: Double
+    - ancienneté: Double
+    - - -
+    + calculeSalaire()
+}
+note bottom of PréparateursCommande
+- moins de 3 ans : aucun avantage.
+- entre 3 et 6 ans : 10 % supplémentaire.
+- après 6 ans : 15 % supplémentaire. 
+end note
+Métier <|- - PréparateursCommande
+
+class Compte {
+    + acheterProduit(produit: ProduitPharmaceutique): Void
+}
+note bottom of Compte
+Vérifier la solvabilité
+end note
+
+class CompteClassique {
+    + acheterProduit(produit: ProduitPharmaceutique): Void    
+}
+Compte <|- - CompteClassique
+
+class CompteFranchisé {
+    + acheterProduit(produit: ProduitPharmaceutique): Void
+}
+note bottom of CompteFranchisé
+Réductions
+end note
+Compte <|- - CompteFranchisé
+
+abstract class Stock {
+    - produits: ProduitPharmaceutique[]
+    - - -
+    + getStocks(): HashMap<ProduitPharmaceutique,Integer>
+}
+note left of Stock
+Pattern: Strategy (évoluer)
+Pattern: Observable (paiement)
+end note
+Stock "*" o- - "*" ProduitPharmaceutique
+
+class StockNumérique {
+
+}
+Stock <|- - StockNumérique
+
+@enduml
+
+PlantUML version 1.2020.18(Wed Sep 30 21:40:44 CEST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

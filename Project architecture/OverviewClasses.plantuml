@@ -1,0 +1,160 @@
+@startuml Overview
+
+Enum TypeProduitPharmaceutique {
+    - vaccin
+    - medicament
+    - produit de beaute
+    - complements alimentaires
+}
+
+class Pharmacie {
+    - id: Integer
+    - nom: String
+    - surfaceCommerciale: Integer
+    - employés: Employé
+    - responsable: PharmaciensDiplômés
+    - siret: String
+    - stock: Stock
+    ---
+    + getNbrEmployés(): Integer
+    + calculChiffreAffaire(): Double
+}
+Pharmacie "1" o-- "1" Stock
+note top of Pharmacie
+getStocks renvoie par exemple:
+- Doliprane 86 units
+- Ibuprophène 13 units
+end note
+note top of Pharmacie
+Pattern: Abstract Factory
+end note
+
+class PharmacieIndépendante {
+    - compteBancaire: CompteClassique
+}
+note bottom of PharmacieIndépendante
+Pattern: Décorateur
+end note
+Pharmacie <|-- PharmacieIndépendante
+PharmacieIndépendante "1" o-- "1" CompteClassique
+
+class PharmacieFranchisée {
+    - franchises: PharmacieFranchisée
+    - pourcentageRoyalties: Double
+    - compteBancaires: Compte[]
+    ---
+    + getRoyalties(): Double
+    + getMontantPayerRoyalties(): Double
+    + calculChiffreAffaire(): Double
+}
+Pharmacie <|-- PharmacieFranchisée
+PharmacieFranchisée "*" <-- "1" PharmacieFranchisée
+PharmacieFranchisée "1" o-- "*" Compte
+note bottom of PharmacieFranchisée
+Pattern: Décorateur
+end note
+note bottom of PharmacieFranchisée
+- 2 à 4 pharmacies : 1 % CA et -2,5 % 
+prix d’achat des produits pour les 
+pharmacies qu’elles gèrent.
+- 5 à 10 pharmacies : 2 % CA et -5 % 
+prix d’achat des produits pour les
+ pharmacies qu’elles gèrent.
+- +10 pharmacies : 3 % CA et -7.5 % 
+prix d’achat des produits pour les 
+pharmacies qu’elles gèrent.
+end note
+
+' #LightSteelBlue
+class ProduitPharmaceutique {
+    - id: Integer
+    - nom: String
+    - type: TypeProduitPharmaceutique
+    - prixAchat: Double
+    - datePeremption: Date
+    ---
+    + calculPrixVente(): Double
+}
+note right of ProduitPharmaceutique
+Pattern: Template Method
+end note
+ProduitPharmaceutique o-- TypeProduitPharmaceutique
+
+class Employé {
+    - nom: String
+    - prénom: String
+    - adresse: String
+    - type: Métier
+}
+Pharmacie o-- Employé
+Employé o-- Métier
+
+Class Métier {
+    - id: Integer
+    ---
+    + calculeSalaire()
+}
+
+class PharmaciensDiplômés {
+    - salaire: Double
+    - nbrVentes: Integer
+    ---
+    + calculePrime()
+    + calculeSalaire()
+}
+note bottom of PharmaciensDiplômés
+1% du nombre total de ventes
+end note
+Métier <|-- PharmaciensDiplômés
+
+class PréparateursCommande {
+    - quotitéHorraires: Double
+    - coutHeure: Double
+    - ancienneté: Double
+    ---
+    + calculeSalaire()
+}
+note bottom of PréparateursCommande
+- moins de 3 ans : aucun avantage.
+- entre 3 et 6 ans : 10 % supplémentaire.
+- après 6 ans : 15 % supplémentaire. 
+end note
+Métier <|-- PréparateursCommande
+
+class Compte {
+    + acheterProduit(produit: ProduitPharmaceutique): Void
+}
+note bottom of Compte
+Vérifier la solvabilité
+end note
+
+class CompteClassique {
+    + acheterProduit(produit: ProduitPharmaceutique): Void    
+}
+Compte <|-- CompteClassique
+
+class CompteFranchisé {
+    + acheterProduit(produit: ProduitPharmaceutique): Void
+}
+note bottom of CompteFranchisé
+Réductions
+end note
+Compte <|-- CompteFranchisé
+
+abstract class Stock {
+    - produits: ProduitPharmaceutique[]
+    ---
+    + getStocks(): HashMap<ProduitPharmaceutique,Integer>
+}
+note left of Stock
+Pattern: Strategy (évoluer)
+Pattern: Observable (paiement)
+end note
+Stock "*" o-- "*" ProduitPharmaceutique
+
+class StockNumérique {
+
+}
+Stock <|-- StockNumérique
+
+@enduml
