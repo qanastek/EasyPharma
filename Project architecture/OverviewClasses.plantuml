@@ -7,7 +7,18 @@ Enum TypeProduitPharmaceutique {
     - complements alimentaires
 }
 
-class Pharmacie {
+Enum Pays {
+    France
+    Espagne
+    Etats-Unis
+    Portugal
+    Royaume-Uni
+}
+note bottom of Pays
+Pattern: Flyweight
+end note
+
+abstract class Pharmacie #LightBlue implements Client {
     - id: Integer
     - nom: String
     - surfaceCommerciale: Integer
@@ -15,15 +26,21 @@ class Pharmacie {
     - responsable: PharmaciensDiplômés
     - siret: String
     - stock: Stock
+    - pays: Pays
     ---
     + getNbrEmployés(): Integer
     + calculChiffreAffaire(): Double
+    + vendre(produit: ProduitPharmaceutique, client: Client): bool
 }
 Pharmacie "1" o-- "1" Stock
+Pharmacie "1" o-- "1" Pays
 note top of Pharmacie
 getStocks renvoie par exemple:
 - Doliprane 86 units
 - Ibuprophène 13 units
+
+Polymorphisme laisse le choix
+dans la classe enfant du type de compte
 end note
 note top of Pharmacie
 Pattern: Abstract Factory
@@ -32,16 +49,14 @@ end note
 class PharmacieIndépendante {
     - compteBancaire: CompteClassique
 }
-note bottom of PharmacieIndépendante
-Pattern: Décorateur
-end note
 Pharmacie <|-- PharmacieIndépendante
 PharmacieIndépendante "1" o-- "1" CompteClassique
 
-class PharmacieFranchisée {
+class PharmacieFranchisée #LightBlue {
     - franchises: PharmacieFranchisée
     - pourcentageRoyalties: Double
-    - compteBancaires: Compte[]
+    - compteClassique: CompteClassique
+    - compteFranchisé: CompteFranchisé
     ---
     + getRoyalties(): Double
     + getMontantPayerRoyalties(): Double
@@ -49,11 +64,13 @@ class PharmacieFranchisée {
 }
 Pharmacie <|-- PharmacieFranchisée
 PharmacieFranchisée "*" <-- "1" PharmacieFranchisée
-PharmacieFranchisée "1" o-- "*" Compte
+PharmacieFranchisée "1" o-- "1" CompteClassique
+PharmacieFranchisée "1" o-- "1" CompteFranchisé
 note bottom of PharmacieFranchisée
-Pattern: Décorateur
-end note
-note bottom of PharmacieFranchisée
+Pattern: State?
+
+---
+
 - 2 à 4 pharmacies : 1 % CA et -2,5 % 
 prix d’achat des produits pour les 
 pharmacies qu’elles gèrent.
@@ -80,10 +97,18 @@ Pattern: Template Method
 end note
 ProduitPharmaceutique o-- TypeProduitPharmaceutique
 
-class Employé {
+abstract class Personne implements Client {
     - nom: String
     - prénom: String
     - adresse: String
+    ---
+    + Personne()
+}
+note right of Personne
+Polymorphisme: Instancier un CompteClassique
+end note
+
+class Employé extends Personne {
     - type: Métier
 }
 Pharmacie o-- Employé
@@ -107,7 +132,7 @@ note bottom of PharmaciensDiplômés
 end note
 Métier <|-- PharmaciensDiplômés
 
-class PréparateursCommande {
+class PréparateursCommande #LightBlue {
     - quotitéHorraires: Double
     - coutHeure: Double
     - ancienneté: Double
@@ -115,33 +140,45 @@ class PréparateursCommande {
     + calculeSalaire()
 }
 note bottom of PréparateursCommande
+Pattern: State?
+---
 - moins de 3 ans : aucun avantage.
 - entre 3 et 6 ans : 10 % supplémentaire.
 - après 6 ans : 15 % supplémentaire. 
 end note
 Métier <|-- PréparateursCommande
 
-class Compte {
-    + acheterProduit(produit: ProduitPharmaceutique): Void
+abstract class CompteBancaire {
+    - solde: double
+    + cartes: CarteBancaire[]
+    ---
+    + CompteBancaire()
+    + CompteBancaire(montant: double)
+    # vérificationSolvabilité(): bool
+    + payer(produit: ProduitPharmaceutique): Void
 }
-note bottom of Compte
+CompteBancaire "1" *-- "*" CarteBancaire
+note bottom of CompteBancaire
 Vérifier la solvabilité
 end note
 
 class CompteClassique {
-    + acheterProduit(produit: ProduitPharmaceutique): Void    
+    + payer(produit: ProduitPharmaceutique): Void    
 }
-Compte <|-- CompteClassique
+CompteBancaire <|-- CompteClassique
+note bottom of CompteClassique
+Débit immédiat
+end note
 
 class CompteFranchisé {
-    + acheterProduit(produit: ProduitPharmaceutique): Void
+    + payer(produit: ProduitPharmaceutique): Void
 }
 note bottom of CompteFranchisé
 Réductions
 end note
-Compte <|-- CompteFranchisé
+CompteBancaire <|-- CompteFranchisé
 
-abstract class Stock {
+abstract class Stock #LightBlue {
     - produits: ProduitPharmaceutique[]
     ---
     + getStocks(): HashMap<ProduitPharmaceutique,Integer>
@@ -156,5 +193,98 @@ class StockNumérique {
 
 }
 Stock <|-- StockNumérique
+
+interface Client {
+    - compteBancaire: CompteBancaire
+    ---
+    + acheterProduit(produit: ProduitPharmaceutique): Void
+}
+Client o-- CompteBancaire
+note left of Client
+Les compte bancaires sont stocker
+sur notre serveur.
+end note
+
+class Transaction {
+    + vendeur: Pharmacie
+    + compteVendeur: CarteBancaire
+    + acheteur: Client
+    + compteClient: CarteBancaire
+    + date: Date
+    + montant: double
+    + produits: ProduitPharmaceutique[]
+}
+note left of Transaction
+Pattern: Memento
+---
+Les comptes ont été explicitement définit
+dans la transaction de sorte à permettre
+une meilleur tracabilité.
+end note
+Transaction --- Pharmacie
+Transaction --- Client
+Transaction o-- CarteBancaire
+
+abstract class CarteBancaire #LightBlue {
+    + réseau: Réseau
+    ---
+    + {abstract} recevoir(montant: double): bool
+    + {abstract} payer(montant: double): bool
+}
+note top of CarteBancaire
+Pattern: Abstract Factory
+end note
+CarteBancaire o-- Réseau
+
+class CarteBancaireClassique extends CarteBancaire {
+    + réseau: Réseau
+    ---
+    + CarteBancaireClassique(reseau: Réseau)
+    + recevoir(montant: double): bool
+    + payer(montant: double): bool
+}
+note bottom of CarteBancaireClassique
+Virement Immédiat
+end note
+
+class CarteBancairePharmacie extends CarteBancaire {
+    + réseau: Réseau
+    ---
+    + CarteBancairePharmacie(reseau: Réseau)
+    + recevoir(montant: double): bool
+    + payer(montant: double): bool
+}
+note bottom of CarteBancairePharmacie
+Virement fin du mois
+end note
+
+abstract Réseau #LightBlue {
+    ---
+    + contester(): void
+}
+note bottom of Réseau
+Pattern: Abstract Factory
+end note
+
+class Visa implements Réseau {
+    ---
+    + contester(): void
+}
+note bottom of Visa
+Remboursement de 100% si france
+Si autre pays X% de retenue
+---
+Le coût de transaction 0.25%
+end note
+
+class Mastercard implements Réseau {
+    ---
+    + contester(): void
+}
+note bottom of Mastercard
+Remboursement total peu importe le lieu
+---
+Coût de 0.5%
+end note
 
 @enduml
