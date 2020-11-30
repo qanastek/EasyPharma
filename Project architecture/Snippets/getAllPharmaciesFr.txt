@@ -1,0 +1,10 @@
+PharmacieFranchisée[] getAllPharmaciesFranchisées() {
+
+    L = []
+
+    for f in franchisées:
+
+        if f.HasFranchisées():
+
+            L.push_back(f.franchisées)
+}

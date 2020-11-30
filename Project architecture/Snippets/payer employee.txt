@@ -1,0 +1,27 @@
+class pharma {
+
+    for e in employee:
+
+        this.payer(e)
+
+
+    void payer(e) {
+        e.calculSalaire(this)
+    }
+
+}
+
+
+class PharmacienDiplômé {
+
+    - salaire: Double
+
+    double calculePrime(pharmacie) {
+        return 0.01 * sum(DBTransaction.get(pharmacie,date));
+    }
+
+    double calculSalaire(pharmacie) {
+        return salaire + calculePrime(pharmacie);
+    }
+
+}

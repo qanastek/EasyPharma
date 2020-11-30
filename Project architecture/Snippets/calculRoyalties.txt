@@ -1,0 +1,9 @@
+Double calculRoyalties(percentage: Double) {
+
+    Double ca = DBTransaction.getWithoutRoyalties(
+        this,
+        Now()
+    );
+
+    return ca * percentage;
+}

@@ -1,0 +1,17 @@
+acheterProduit(produits[], pharma) {
+
+    if pharma in franchises:
+
+        p.vendre(
+            produits,
+            this,
+            new VenteMaisonMère()
+        )
+
+    else:
+
+        p.vendre(
+            produits,
+            this
+        )
+}

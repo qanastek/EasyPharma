@@ -1,0 +1,10 @@
+# Transaction
+t = new Transaction(
+    this,
+    this.compteBancaire.getCB(0),
+    p,
+    p.compteBancaire.getCB(0),
+    Now(),
+    montant,
+    []
+)

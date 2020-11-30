@@ -1,0 +1,17 @@
+void collectRoyalties() {
+
+    # Get percentage to charge
+    percentage = getPercentage()
+
+    # Pour chaque children
+    for p in getAllPharmaciesFranchisées():
+
+        # Combien paye la pharmacie child
+        montant = p.calculRoyalties(percentage)
+
+        # Vendre la royalties
+        this.vendre(
+            [],
+            montant
+        )
+}

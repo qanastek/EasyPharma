@@ -1,0 +1,18 @@
+# Pour chaque parent
+# Récupérer sont montant de 
+double getMontantFinMoisRoyalties() {
+
+    totalPercent = 0
+
+    current = parent
+
+    while(current != null):
+
+        # Add the parent percentage
+        totalPercent += current.getPercentage()
+
+        # Up
+        current = current.parent
+
+    return totalPercent * this.getChiffreAffaireBeforeRoyalties(Now());
+}
