@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox minHeight="400.0" minWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+<HBox minHeight="400.0" minWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainController">
    <children>
       <Button mnemonicParsing="false" onAction="#handleButton1" text="Saluce" />
       <Text fx:id="content" strokeType="OUTSIDE" strokeWidth="0.0" text="Before text" />

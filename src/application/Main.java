@@ -14,11 +14,11 @@ public class Main extends Application {
 		
 		try {
 			
-			HBox root = (HBox)FXMLLoader.load(getClass().getResource("Main.fxml"));
+			HBox root = (HBox)FXMLLoader.load(getClass().getResource("vues/Main.fxml"));
 			
 			Scene scene = new Scene(root,400,400);
 			
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("vues/application.css").toExternalForm());
 			
 			primaryStage.setScene(scene);
 			primaryStage.show();
