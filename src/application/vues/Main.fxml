@@ -6,9 +6,179 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox minHeight="400.0" minWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainController">
+<AnchorPane minHeight="720.0" minWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainController">
    <children>
-      <Button mnemonicParsing="false" onAction="#handleButton1" text="Saluce" />
-      <Text fx:id="content" strokeType="OUTSIDE" strokeWidth="0.0" text="Before text" />
+      <SplitPane dividerPositions="0.8" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ScrollPane fitToHeight="true" fitToWidth="true" VBox.vgrow="ALWAYS">
+                                      <content>
+                                        <AnchorPane>
+                                             <children>
+                                                <ListView fx:id="sideMenu" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                    <HBox>
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ajoutePharmacie" text="Add Pharmacie" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Vue d'ensemble">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox fx:id="main" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <Text fx:id="content6" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacie" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <Text fx:id="content" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+                                                            <TextField fx:id="nomPharma" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <Text fx:id="content2" strokeType="OUTSIDE" strokeWidth="0.0" text="Siret" />
+                                                            <TextField fx:id="siretPharma" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <Text fx:id="content3" strokeType="OUTSIDE" strokeWidth="0.0" text="Pays" />
+                                                            <TextField fx:id="paysPharma" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <Text fx:id="content4" strokeType="OUTSIDE" strokeWidth="0.0" text="Surface" />
+                                                            <TextField fx:id="surfacePharma" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <Text fx:id="content5" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsable" />
+                                                            <TextField fx:id="responsablePharma" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox>
+                                                         <children>
+                                                            <Text fx:id="content1" strokeType="OUTSIDE" strokeWidth="0.0" text="Before text" />
+                                                            <Button mnemonicParsing="false" onAction="#handleButton1" text="Saluce" />
+                                                         </children>
+                                                      </HBox>
+                                                      <Separator prefWidth="200.0" />
+                                                      <HBox>
+                                                         <children>
+                                                            <Label text="Cartes Bleu" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <TableView fx:id="cartes" HBox.hgrow="ALWAYS">
+                                                              <columns>
+                                                                <TableColumn prefWidth="75.0" text="ID" />
+                                                                <TableColumn prefWidth="75.0" text="Réseau" />
+                                                              </columns>
+                                                            </TableView>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Employés">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ListView fx:id="employeeList" layoutX="329.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <TableView fx:id="employees" layoutX="229.0" layoutY="207.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="ID" />
+                                                    <TableColumn prefWidth="75.0" text="NOM" />
+                                                      <TableColumn prefWidth="75.0" text="PRENOM" />
+                                                      <TableColumn prefWidth="75.0" text="ADRESSE" />
+                                                      <TableColumn prefWidth="75.0" text="METIER" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                  <Tab text="Stock">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TableView fx:id="stock" layoutX="222.0" layoutY="95.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="95.0" text="REFERENCE" />
+                                                    <TableColumn prefWidth="130.0" text="NOM PRODUIT" />
+                                                      <TableColumn minWidth="0.0" prefWidth="0.0" text="TYPE" />
+                                                      <TableColumn prefWidth="75.0" text="PRIX" />
+                                                      <TableColumn prefWidth="75.0" text="QTS" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Transactions">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ListView fx:id="stockList1" layoutX="329.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <TableView fx:id="transactions" layoutX="222.0" layoutY="95.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="ID" />
+                                                      <TableColumn prefWidth="98.0" text="VENDEUR" />
+                                                      <TableColumn prefWidth="98.0" text="ACHETEUR" />
+                                                      <TableColumn prefWidth="98.0" text="VENDEUR" />
+                                                      <TableColumn prefWidth="98.0" text="DATE" />
+                                                      <TableColumn prefWidth="98.0" text="MONTANT" />
+                                                      <TableColumn prefWidth="291.0" text="PRODUITS" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="bottom" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextArea fx:id="logArea" layoutX="245.0" layoutY="-48.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
-</HBox>
+</AnchorPane>
