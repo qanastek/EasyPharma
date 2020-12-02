@@ -21,8 +21,9 @@ public abstract class CompteBancaire {
 		return montant < solde;
 	}
 	
-	public abstract boolean payer(ProduitPharmaceutique produit);
-
+	// Buy/Sell a product to the seller/buyer
+	public abstract boolean paiement(ArrayList<ProduitPharmaceutique> produits, Double montant, Client acheteur, Pharmacie vendeur, int carteClient);
+	
 	public ArrayList<CarteBancaire> getCartes() {
 		return cartes;
 	}

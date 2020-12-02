@@ -1,6 +1,7 @@
 package application.models;
 
 import application.models.Abstracts.CarteBancaire;
+import application.models.Abstracts.CompteBancaire;
 import application.models.Interfaces.Réseau;
 
 public class CarteBancaireClassique extends CarteBancaire {
@@ -10,13 +11,7 @@ public class CarteBancaireClassique extends CarteBancaire {
 	}
 
 	@Override
-	public boolean recevoir(Double montant) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean payer(Double montant) {
+	public boolean transfert(Double montant, CompteBancaire compteEmmeteur, CompteBancaire compteReceveur) {
 		// TODO Auto-generated method stub
 		return false;
 	}

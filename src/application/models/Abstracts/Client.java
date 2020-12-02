@@ -19,5 +19,10 @@ public abstract class Client {
 	public void setCompteBancaire(CompteBancaire compteBancaire) {
 		this.compteBancaire = compteBancaire;
 	}	
+	
+	// 0%
+	public Double getReduction(Pharmacie seller) {		
+		return 0.0;
+	}
 
 }

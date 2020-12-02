@@ -6,11 +6,11 @@ import java.util.Date;
 import application.models.Abstracts.CarteBancaire;
 import application.models.Abstracts.Client;
 import application.models.Abstracts.Pharmacie;
+import application.models.Enums.TypeProduitPharmaceutique;
 
 public class Transaction {
 	
 	private Pharmacie vendeur;
-	private CarteBancaire carteVendeur;
 	private Client acheteur;
 	private CarteBancaire carteClient;
 	private Date date;
@@ -19,7 +19,6 @@ public class Transaction {
 	
 	public Transaction(
 		Pharmacie vendeur,
-		CarteBancaire carteVendeur,
 		Client acheteur,
 		CarteBancaire carteClient,
 		Date date,
@@ -27,12 +26,29 @@ public class Transaction {
 		ArrayList<ProduitPharmaceutique> produits
 	) {
 		this.setVendeur(vendeur);
-		this.setCarteVendeur(carteVendeur);
 		this.setAcheteur(acheteur);
 		this.setCarteClient(carteClient);
 		this.setDate(date);
 		this.setMontant(montant);
 		this.setProduits(produits);
+	}
+	
+	/**
+	 * Check if the transaction contains the type
+	 * @param type
+	 */
+	public boolean contains(TypeProduitPharmaceutique type) {
+		
+		// For each products
+		for (ProduitPharmaceutique produitPharmaceutique : produits) {
+			
+			// If is a royalties
+			if (produitPharmaceutique.getType() == type) {
+				return true;
+			}
+		}
+		
+		return false;		
 	}
 	
 	public void annuler() {
@@ -81,14 +97,6 @@ public class Transaction {
 
 	public void setAcheteur(Client acheteur) {
 		this.acheteur = acheteur;
-	}
-
-	public CarteBancaire getCarteVendeur() {
-		return carteVendeur;
-	}
-
-	public void setCarteVendeur(CarteBancaire carteVendeur) {
-		this.carteVendeur = carteVendeur;
 	}
 
 	public Pharmacie getVendeur() {

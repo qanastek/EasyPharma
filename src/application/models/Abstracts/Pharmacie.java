@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import application.models.CompteClassique;
 import application.models.Employé;
 import application.models.Pays;
+import application.models.PharmacieFranchisée;
 import application.models.PharmacienDiplômé;
 import application.models.ProduitPharmaceutique;
+import application.models.VenteNormal;
 import application.models.Interfaces.CalculPrixVente;
 
 public abstract class Pharmacie extends Client {
@@ -38,21 +40,31 @@ public abstract class Pharmacie extends Client {
 		// TODO: Implement It
 		return false;
 	}
-	
 
 	public Double calculChiffreAffaire() {
 		// TODO: Implement It
 		return null;
 	}
 	
-	public boolean vendre(ArrayList<ProduitPharmaceutique> produits, Client client) {
-		// TODO: Use the default selling
-		return false;		
-	}
-	
-	public boolean vendre(ArrayList<ProduitPharmaceutique> produits, Client client, CalculPrixVente methode) {
-		// TODO: Use the default selling
-		return false;		
+	/**
+	 * We sale a product to a client for a specific price
+	 * @param produits
+	 * @param client
+	 * @return
+	 */
+	public boolean vendre(ArrayList<ProduitPharmaceutique> produits, Client client, int carteClient) {
+
+		// Total price
+		double montantPanier = 0.0;
+		
+		// For each products
+		for (ProduitPharmaceutique p : produits) {
+			
+			montantPanier += p.getPrixVente();
+		}
+		
+		// We sale the products at the base price
+		return compteClassique.paiement(produits, montantPanier, client, this, carteClient);
 	}
 		
 	public String getNom() {
