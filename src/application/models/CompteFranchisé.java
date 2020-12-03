@@ -6,17 +6,16 @@ import java.util.Date;
 import application.models.Abstracts.Client;
 import application.models.Abstracts.CompteBancaire;
 import application.models.Abstracts.Pharmacie;
+import application.models.Patterns.CommandTransaction.CommandTransaction;
 
 public class CompteFranchisé extends CompteBancaire {
 
 	@Override
-	public boolean paiement(ArrayList<ProduitPharmaceutique> produits, Double montant, Client acheteur, Pharmacie vendeur, int carteClient) {
-		// TODO Auto-generated method stub
-
+	public CommandTransaction paiement(ArrayList<ProduitPharmaceutique> produits, Double montant, Client acheteur, Pharmacie vendeur, int carteClient) {
 
 		// Check if the client can pay
 		if (acheteur.getCompteBancaire().vérificationSolvabilité(montant) == false) {
-			return false;
+			return null;
 		}
 		
 		// Créer une transaction
@@ -28,10 +27,14 @@ public class CompteFranchisé extends CompteBancaire {
 			new VenteMaisonMère().calculPrixVente(montant, vendeur, acheteur),
 			produits
 		);
+
+		// La commande associé à la transaction
+		CommandTransaction cmd = new CommandTransaction(t, false);
 		
-		// Insert the record
-		DBTransaction.getInstance().addRecord(t);
-		
-		return false;
+		// Ajoute la commande dans l'historique d'achat du client
+		acheteur.ajouterCommande(cmd);
+
+		// Retourne la commande
+		return cmd;
 	}
 }

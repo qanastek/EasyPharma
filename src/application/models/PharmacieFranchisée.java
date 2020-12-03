@@ -6,6 +6,7 @@ import java.util.Date;
 import application.models.Abstracts.Client;
 import application.models.Abstracts.Pharmacie;
 import application.models.Enums.TypeProduitPharmaceutique;
+import application.models.Patterns.CommandTransaction.CommandTransaction;
 
 public class PharmacieFranchisée extends Pharmacie {
 
@@ -214,7 +215,7 @@ public class PharmacieFranchisée extends Pharmacie {
 	 * @param client
 	 * @return
 	 */
-	public boolean vendre(ArrayList<ProduitPharmaceutique> produits, Client client, int carteClient) {
+	public CommandTransaction vendre(ArrayList<ProduitPharmaceutique> produits, Client client, int carteClient) {
 
 		// Total price
 		double montantPanier = 0.0;

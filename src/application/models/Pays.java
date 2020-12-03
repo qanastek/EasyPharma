@@ -9,6 +9,11 @@ public class Pays {
 	private Double pib;
 	private Double coutVisa;
 
+	/**
+	 * Constructeur
+	 * @param nom
+	 * @param coutVisa
+	 */
 	public Pays(String nom, Double coutVisa) {
 		
 		Random rand = new Random();
@@ -19,6 +24,13 @@ public class Pays {
 		this.coutVisa = coutVisa;
 	}
 	
+	/**
+	 * Constructeur
+	 * @param nom
+	 * @param taillePopulation
+	 * @param pib
+	 * @param coutVisa
+	 */
 	public Pays(String nom, int taillePopulation, Double pib, Double coutVisa) {
 		this.nom = nom;
 		this.taillePopulation = taillePopulation;
@@ -29,25 +41,25 @@ public class Pays {
 	public int getTaillePopulation() {
 		return taillePopulation;
 	}
+	
 	public void setTaillePopulation(int taillePopulation) {
 		this.taillePopulation = taillePopulation;
 	}
+	
 	public Double getPib() {
 		return pib;
 	}
+	
 	public void setPib(Double pib) {
 		this.pib = pib;
 	}
+	
 	public String getNom() {
 		return nom;
 	}
+	
 	public void setNom(String nom) {
 		this.nom = nom;
-	}
-
-	@Override
-	public String toString() {
-		return getNom();
 	}
 
 	public Double getCoutVisa() {
@@ -56,5 +68,10 @@ public class Pays {
 
 	public void setCoutVisa(Double coutVisa) {
 		this.coutVisa = coutVisa;
+	}
+
+	@Override
+	public String toString() {
+		return getNom();
 	}
 }

@@ -10,6 +10,7 @@ import application.models.PharmacienDiplômé;
 import application.models.ProduitPharmaceutique;
 import application.models.VenteNormal;
 import application.models.Interfaces.CalculPrixVente;
+import application.models.Patterns.CommandTransaction.CommandTransaction;
 
 public abstract class Pharmacie extends Client {
 	
@@ -52,7 +53,7 @@ public abstract class Pharmacie extends Client {
 	 * @param client
 	 * @return
 	 */
-	public boolean vendre(ArrayList<ProduitPharmaceutique> produits, Client client, int carteClient) {
+	public CommandTransaction vendre(ArrayList<ProduitPharmaceutique> produits, Client client, int carteClient) {
 
 		// Total price
 		double montantPanier = 0.0;

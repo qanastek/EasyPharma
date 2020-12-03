@@ -1,12 +1,18 @@
 package application.models;
 
-import application.models.Interfaces.Réseau;
+import application.models.Abstracts.Réseau;
 
-public class MasterCard implements Réseau {
+public class MasterCard extends Réseau {
+	
+	public MasterCard() {
+		this.coutRéseau = 0.5;
+	}
 
-	public void contester() {
-		// TODO Auto-generated method stub
-
+	/**
+	 * Montant rembourser au client
+	 */
+	public double calculRemboursement(Transaction t) {
+		return t.getMontant() * (1 - 0.5);
 	}
 	
 	@Override

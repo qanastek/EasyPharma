@@ -15,9 +15,16 @@ public class DBTransaction {
 	 */
 	private static ArrayList<Transaction> TRANSACTIONS;
 	
+	/**
+	 * Rend inutilisable le constructeur en dehors de la classe
+	 */
 	private DBTransaction() {
 	}
 	
+	/**
+	 * Retourne l'instance du singleton
+	 * @return
+	 */
 	public static DBTransaction getInstance() {
 
 		// Check if instantiated
@@ -36,6 +43,14 @@ public class DBTransaction {
 	public void addRecord(Transaction t) {
 		DBTransaction.TRANSACTIONS.add(t);
 	}
+
+	/**
+	 * Return all the transactions
+	 * @return The transaction
+	 */
+	public ArrayList<Transaction> getAll() {
+		return DBTransaction.TRANSACTIONS;
+	}
 	
 	/**
 	 * Return all the transactions
@@ -44,7 +59,26 @@ public class DBTransaction {
 	 * @return The transaction
 	 */
 	public ArrayList<Transaction> getAll(Pharmacie pharmacie, Date date) {
-		return DBTransaction.TRANSACTIONS;
+
+		// Output transactions
+		ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+		
+		// For each transaction
+		for (Transaction transaction : DBTransaction.TRANSACTIONS) {
+			
+			// If same month and pharmacy
+			if (transaction.getVendeur() == pharmacie &&
+				transaction.getDate().getMonth() == date.getMonth() &&
+				transaction.getDate().getYear() == date.getYear()
+			) {
+
+				// Add the price
+				transactions.add(transaction);
+			}
+		}
+		
+		// Return all the transactions in the period
+		return transactions;
 	}
 	
 	/**
@@ -62,7 +96,11 @@ public class DBTransaction {
 		for (Transaction transaction : DBTransaction.TRANSACTIONS) {
 			
 			// If doesn't contains a royalties
-			if (transaction.contains(TypeProduitPharmaceutique.Royalties) == false) {
+			if (transaction.getVendeur() == pharmacie &&
+				transaction.contains(TypeProduitPharmaceutique.Royalties) == false &&
+				transaction.getDate().getMonth() == date.getMonth() &&
+				transaction.getDate().getYear() == date.getYear()
+			) {
 
 				// Add the price
 				transactions.add(transaction);

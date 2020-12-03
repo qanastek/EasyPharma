@@ -3,6 +3,7 @@ package application.models.Abstracts;
 import java.util.ArrayList;
 
 import application.models.ProduitPharmaceutique;
+import application.models.Patterns.CommandTransaction.CommandTransaction;
 
 public abstract class CompteBancaire {
 	
@@ -16,13 +17,29 @@ public abstract class CompteBancaire {
 	public CompteBancaire(Double solde) {
 		this.solde = solde;
 	}
+
+	/**
+	 * Débite le compte d'une somme
+	 * @param montant
+	 */
+	public void débiter(double montant) {
+		solde -= montant;
+	}
 	
+	/**
+	 * Crédite le compte d'une somme
+	 * @param montant
+	 */
+	public void créditer(double montant) {
+		solde += montant;
+	}
+		
 	public boolean vérificationSolvabilité(Double montant) {
 		return montant < solde;
 	}
 	
 	// Buy/Sell a product to the seller/buyer
-	public abstract boolean paiement(ArrayList<ProduitPharmaceutique> produits, Double montant, Client acheteur, Pharmacie vendeur, int carteClient);
+	public abstract CommandTransaction paiement(ArrayList<ProduitPharmaceutique> produits, Double montant, Client acheteur, Pharmacie vendeur, int carteClient);
 	
 	public ArrayList<CarteBancaire> getCartes() {
 		return cartes;

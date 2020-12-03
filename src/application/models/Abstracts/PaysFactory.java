@@ -1,4 +1,4 @@
-package application.models.Patterns.FlyweightPays;
+package application.models.Abstracts;
 
 import java.util.HashMap;
 

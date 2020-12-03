@@ -1,12 +1,18 @@
 package application.models;
 
-import application.models.Interfaces.Réseau;
+import application.models.Abstracts.Réseau;
 
-public class Visa implements Réseau {
+public class Visa extends Réseau {
+	
+	public Visa() {
+		this.coutRéseau = 0.25;
+	}
 
-	public void contester() {
-		// TODO Auto-generated method stub
-
+	/**
+	 * Montant rembourser au client
+	 */
+	public double calculRemboursement(Transaction t) {
+		return t.getMontant() * (1 - t.getVendeur().getPays().getCoutVisa());
 	}
 	
 	@Override

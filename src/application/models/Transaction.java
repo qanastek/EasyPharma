@@ -8,13 +8,14 @@ import application.models.Abstracts.Client;
 import application.models.Abstracts.Pharmacie;
 import application.models.Enums.TypeProduitPharmaceutique;
 
-public class Transaction {
+public class Transaction implements Cloneable {
 	
 	private Pharmacie vendeur;
 	private Client acheteur;
 	private CarteBancaire carteClient;
 	private Date date;
 	private Double montant;
+	private boolean débité = false;
 	private ArrayList<ProduitPharmaceutique> produits;
 	
 	public Transaction(
@@ -107,4 +108,24 @@ public class Transaction {
 		this.vendeur = vendeur;
 	}
 
+	public boolean isDébité() {
+		return débité;
+	}
+
+	public void setDébité(boolean débité) {
+		this.débité = débité;
+	}
+  
+  	public Object clone() {
+  		
+    	Object o = null;
+    	
+    	try {
+      		o = super.clone();
+    	} catch(CloneNotSupportedException cnse) {
+      		cnse.printStackTrace(System.err);
+	    }
+    	
+	    return o;
+  	}
 }
