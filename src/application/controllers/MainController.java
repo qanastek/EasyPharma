@@ -52,8 +52,8 @@ public class MainController implements Initializable {
      * Side menu of pharmacy
      */
     ObservableList<Pharmacie> data = FXCollections.observableArrayList(
-		new PharmacieIndépendante("Pharmacie Benoit",100,"78998f7sd987fd", PaysFactory.getInstance().getPays("france")),
-		new PharmacieFranchisée("Pharmacie Hanout",1234,"fs45f45sd6fs", PaysFactory.getInstance().getPays("france"))
+		new PharmacieIndépendante("Grande Pharmacie Grégoire",340,"50917660800016", PaysFactory.getInstance().getPays("france")),
+		new PharmacieFranchisée("Pharmacie Paris Charonne",1200,"80360531000017", PaysFactory.getInstance().getPays("france"))
     );
     @FXML
     private ListView<Pharmacie> sideMenu;
