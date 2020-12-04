@@ -1,14 +1,17 @@
 package application.models.Abstracts;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import application.models.CompteClassique;
+import application.models.DBTransaction;
 import application.models.Employé;
 import application.models.Pays;
-import application.models.PharmacieFranchisée;
 import application.models.PharmacienDiplômé;
 import application.models.ProduitPharmaceutique;
-import application.models.VenteNormal;
+import application.models.Stock;
+import application.models.Transaction;
+import application.models.Enums.TypeProduitPharmaceutique;
 import application.models.Interfaces.CalculPrixVente;
 import application.models.Patterns.CommandTransaction.CommandTransaction;
 
@@ -31,20 +34,66 @@ public abstract class Pharmacie extends Client {
 		this.pays = pays;
 	}
 	
-	public abstract String getType();
-	
-	public int getNbrEmployés() {
-		return employés.size();
+	/**
+	 * Payer les salaires des employés
+	 */
+	public void payerSalaires() {
+		
+		// Pour chaque employé
+		for (Employé employé : employés) {
+			
+			// Payer son salaire
+			this.payerSalaire(employé);			
+		}
 	}
 	
+	/**
+	 * Payer le salaire de l'employé
+	 * @param employé
+	 * @return
+	 */
 	public boolean payerSalaire(Employé employé) {
-		// TODO: Implement It
+		
+		// Liste les produits
+		ArrayList<ProduitPharmaceutique> produits = new ArrayList<ProduitPharmaceutique>();
+		
+		// Construire le produit salaire
+		ProduitPharmaceutique p = new ProduitPharmaceutique(
+			"Salaire",
+			TypeProduitPharmaceutique.Salaire,
+			employé.calculSalaire(this, new Date()),
+			0.0,
+			new Date()
+		);
+		
+		// Ajouter le salaire aux produits
+		produits.add(p);
+		
+		// Payer l'employé
+		this.compteClassique.paiement(produits, p.getPrixVente(), employé, this, 0);
+		
 		return false;
 	}
+	
+	/**
+	 * Compute the revenue without the royalties
+	 * @param date The month date
+	 * @return revenue
+	 */
+	public Double getChiffreAffaireBeforeRoyalties(Date date) {
 
-	public Double calculChiffreAffaire() {
-		// TODO: Implement It
-		return null;
+		// Revenue
+		double ca = 0.0;
+		
+		// For each transaction
+		for (Transaction t: DBTransaction.getInstance().getWithoutRoyalties(this, date)) {
+			
+			// Increment
+			ca += t.getMontant();
+		}
+		
+		// Return revenue
+		return ca;
 	}
 	
 	/**
@@ -57,7 +106,7 @@ public abstract class Pharmacie extends Client {
 
 		// Total price
 		double montantPanier = 0.0;
-		
+
 		// For each products
 		for (ProduitPharmaceutique p : produits) {
 			
@@ -67,7 +116,14 @@ public abstract class Pharmacie extends Client {
 		// We sale the products at the base price
 		return compteClassique.paiement(produits, montantPanier, client, this, carteClient);
 	}
-		
+
+	// Return the pharmacy type name
+	public abstract String getType();	
+	
+	public int getNbrEmployés() {
+		return employés.size();
+	}
+	
 	public String getNom() {
 		return nom;
 	}

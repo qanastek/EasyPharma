@@ -1,23 +1,37 @@
 package application.models;
 
-import application.models.Abstracts.Pharmacie;
-import application.models.Interfaces.Métier;
+import java.util.Date;
 
-public class PharmacienDiplômé implements Métier {
+import application.models.Abstracts.Pharmacie;
+
+public class PharmacienDiplômé extends Employé {
 	
 	private Double salaire;
 	
-	public PharmacienDiplômé(Double salaire) {
+	public PharmacienDiplômé(String nom, String prénom, String adresse, Date dateEmbauché, Double salaire) {
+		super(nom, prénom, adresse, dateEmbauché);
 		this.setSalaire(salaire);
 	}
-	
-	private Double calculePrime(Pharmacie pharmacie) {
-		// TODO: Implement It
-		return null;
+
+	/**
+	 * Calcul le montant après prime
+	 * @return
+	 */
+	protected Double salaireAprèsPrime(Pharmacie pharmacie, Double salaire, Date date) {
+		
+		// Retourne le pourcentage de prime
+		return salaire + (0.01 * pharmacie.getChiffreAffaireBeforeRoyalties(date));
 	}
 
-	public Double calculSalaire(Pharmacie pharmacie) {
-		return salaire + calculePrime(pharmacie);
+	/**
+	 * Calcul le salaire final
+	 * @param pharmacie
+	 * @return
+	 */
+	public Double calculSalaire(Pharmacie pharmacie, Date date) {
+		
+		// Salaire final
+		return salaireAprèsPrime(pharmacie, this.salaire, date);
 	}
 
 	public Double getSalaire() {

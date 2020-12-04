@@ -33,11 +33,9 @@ public class PaysFactory {
 			// Instantiate the flyweight
 			INSTANCE = new PaysFactory();
 		}
-		else {
-			
-			// Return the instance of it
-			return INSTANCE;
-		}
+		
+		// Return the instance of it
+		return INSTANCE;
 	}
 	
 	/**

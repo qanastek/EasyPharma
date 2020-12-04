@@ -6,6 +6,7 @@ public enum TypeProduitPharmaceutique {
 	Médicament,
 	ProduitBeauté,
 	CompementAlimentaire,
-	Royalties
+	Royalties,
+	Salaire
 
 }

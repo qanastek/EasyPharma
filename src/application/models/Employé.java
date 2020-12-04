@@ -1,11 +1,13 @@
 package application.models;
 
-import application.models.Interfaces.Métier;
+import java.util.Date;
 
-public class Employé extends Personne {
+import application.models.Abstracts.Pharmacie;
 
-	// Métier
-	private Métier métier;
+public abstract class Employé extends Personne {
+	
+	// Date d'embauche
+	private Date dateEmbauché;
 	
 	/**
 	 * Constructeur
@@ -14,18 +16,40 @@ public class Employé extends Personne {
 	 * @param adresse
 	 * @param métier
 	 */
-	public Employé(String nom, String prénom, String adresse, Métier métier) {
+	public Employé(String nom, String prénom, String adresse, Date dateEmbauché) {
 		super(nom, prénom, adresse);
 		
-		this.métier = métier;
+		this.setDateEmbauché(dateEmbauché);
+	}
+	
+	/**
+	 * Calcul le salaire après la prime
+	 * @param pharmacie
+	 * @return
+	 */	
+	protected abstract Double salaireAprèsPrime(Pharmacie pharmacie, Double salaire, Date date);
+	
+	/**
+	 * Calcul le salaire final
+	 * @param pharmacie
+	 * @return
+	 */
+	public abstract Double calculSalaire(Pharmacie pharmacie, Date date);
+
+	public Date getDateEmbauché() {
+		return dateEmbauché;
 	}
 
-	public Métier getMétier() {
-		return métier;
+	public void setDateEmbauché(Date dateEmbauché) {
+		this.dateEmbauché = dateEmbauché;
 	}
-
-	public void setMétier(Métier métier) {
-		this.métier = métier;
+	
+	/**
+	 * Retourne l'ancienneté
+	 * @return
+	 */
+	public int getAncienneté() {
+		return new Date().getYear() - dateEmbauché.getYear();
 	}
 	
 	@Override

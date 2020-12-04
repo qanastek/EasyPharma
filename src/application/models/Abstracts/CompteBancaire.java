@@ -7,7 +7,10 @@ import application.models.Patterns.CommandTransaction.CommandTransaction;
 
 public abstract class CompteBancaire {
 	
+	// Solde
 	private Double solde;
+	
+	// Cartes
 	private ArrayList<CarteBancaire> cartes;
 	
 	public CompteBancaire() {

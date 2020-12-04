@@ -51,14 +51,6 @@ public class Transaction implements Cloneable {
 		
 		return false;		
 	}
-	
-	public void annuler() {
-		// TODO: Implements It
-	}
-	
-	public void rembourser() {
-		// TODO: Implements It
-	}
 
 	public ArrayList<ProduitPharmaceutique> getProduits() {
 		return produits;

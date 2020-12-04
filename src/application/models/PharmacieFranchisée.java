@@ -60,14 +60,6 @@ public class PharmacieFranchisée extends Pharmacie {
 	}
 	
 	/**
-	 * Compute the amount of royalties (in currency) to paid to the parent
-	 * @return
-	 */
-	public Double calculRoyalties(Date date) {
-		return getChiffreAffaireBeforeRoyalties(date) * (1 - calculPercentageRoyalties());
-	}
-	
-	/**
 	 * Compute the royalties percentage
 	 * @return
 	 */
@@ -94,7 +86,10 @@ public class PharmacieFranchisée extends Pharmacie {
 		return percentages;
 	}
 	
-	public void payRoyalties() {
+	/**
+	 * Quand ont souhaite payer les royalties en fin de mois
+	 */
+	public void payRoyalties(Date date) {
 		
 		// TODO: Confirm the receivers
 //		PharmacieFranchisée receiver = getRootParent();
@@ -105,27 +100,28 @@ public class PharmacieFranchisée extends Pharmacie {
 			return;
 		}
 		
+		// List of products
 		ArrayList<ProduitPharmaceutique> p = new ArrayList<ProduitPharmaceutique>();
 		
 		// Add the royalties
 		p.add(new ProduitPharmaceutique(
 			"Royalties",
 			TypeProduitPharmaceutique.Royalties,
-			getMontantFinMoisRoyalties(),
+			getMontantFinMoisRoyalties(date),
 			0.0,
 			null
 		));
 
 		// Buy the royalties to the receiver
-		this.acheterProduit(p, receiver);		
+		receiver.vendre(p, this, 0);
 	}
-	
+
 	/**
-	 * Return the payed royalties
+	 * Compute the amount of royalties (in currency) to paid to the parent
+	 * @return
 	 */
-	public Double getMontantFinMoisRoyalties() {
-		// TODO: Implement It
-		return 0.0;
+	public Double getMontantFinMoisRoyalties(Date date) {
+		return getChiffreAffaireBeforeRoyalties(date) * (1 - calculPercentageRoyalties());
 	}
 	
 	/**
@@ -140,30 +136,6 @@ public class PharmacieFranchisée extends Pharmacie {
 		
 		// Get all the transactions
 		ArrayList<Transaction> transactions = DBTransaction.getInstance().getAll(this, date);
-		
-		// For each transaction
-		for (Transaction transaction : transactions) {
-
-			// Add the price
-			chiffreAffaire += transaction.getMontant();
-		}
-		
-		// Return the revenue without the royalties
-		return chiffreAffaire;
-	}
-	
-	/**
-	 * Compute the revenue without the royalties
-	 * @param date The month date
-	 * @return revenue
-	 */
-	public Double getChiffreAffaireBeforeRoyalties(Date date) {
-		
-		// Total revenues
-		double chiffreAffaire = 0.0;
-		
-		// Get all the transactions
-		ArrayList<Transaction> transactions = DBTransaction.getInstance().getWithoutRoyalties(this, date);
 		
 		// For each transaction
 		for (Transaction transaction : transactions) {
@@ -190,6 +162,7 @@ public class PharmacieFranchisée extends Pharmacie {
 	 */
 	public ArrayList<PharmacieFranchisée> getAllPharmaciesFranchisées() {
 
+		// List of subsidiaries
 	    ArrayList<PharmacieFranchisée> subsidiaries = new ArrayList<PharmacieFranchisée>();
 	    
 	    // Add the current pharmacy subsidiaries
@@ -206,6 +179,7 @@ public class PharmacieFranchisée extends Pharmacie {
 			}			
 		}
 	    
+	    // return the subsidiaries
 	    return subsidiaries;
 	}
 	
@@ -223,6 +197,7 @@ public class PharmacieFranchisée extends Pharmacie {
 		// For each products
 		for (ProduitPharmaceutique p : produits) {
 			
+			// Add the price to the cart
 			montantPanier += p.getPrixVente();
 		}
 		
@@ -235,33 +210,6 @@ public class PharmacieFranchisée extends Pharmacie {
 		
 		// We sale the products at the base price
 		return getCompteClassique().paiement(produits, montantPanier, client, this, carteClient);
-	}
-	
-	/**
-	 * Return the root of the tree
-	 * @return
-	 */
-	public PharmacieFranchisée getRootParent() {
-
-		PharmacieFranchisée current = this.parent;
-		
-		// While have parent
-		while(current != null) {
-			
-			// Go up in parent tree
-			current = current.parent;
-		}
-		
-		return current;
-	}
-	
-	/**
-	 * Acheter pour le stock et royalties
-	 */
-	public void acheterProduit(ArrayList<ProduitPharmaceutique> produit, Pharmacie vendeur) {
-		
-		// TODO: A faire	
-		
 	}
 	
 	public PharmacieFranchisée getParent() {

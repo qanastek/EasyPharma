@@ -5,6 +5,7 @@ import application.models.Transaction;
 
 public class CommandTransaction {
 		
+	// The transaction
 	Transaction t;
 	
 	/**
