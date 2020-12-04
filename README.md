@@ -1,3 +1,3 @@
 # PhamaCERI
 
-![Preview](GithubAssets/Preview.PNG)
+![Preview](GithubAssets/Preview.png)
