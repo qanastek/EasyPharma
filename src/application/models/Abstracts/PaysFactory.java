@@ -25,7 +25,7 @@ public class PaysFactory {
 	 * Get the flyweight instance
 	 * @return PaysFactory
 	 */
-	public PaysFactory getInstance() {
+	public static PaysFactory getInstance() {
 		
 		// Check instantiated
 		if(INSTANCE == null) {
@@ -43,10 +43,10 @@ public class PaysFactory {
 	 * @param name The name of the country
 	 * @return The country instance
 	 */
-	public static Pays getPays(String name) {
+	public Pays getPays(String name) {
 		
 		// Get the instance (if exist)
-		Pays pays = LIST.get(name);
+		Pays pays = LIST.get(name.toLowerCase());
 		
 		// Check if already exist in it
 		if (pays != null) {
@@ -58,25 +58,25 @@ public class PaysFactory {
 			
 			System.out.println("Create " + name);
 			
-			switch (name) {
+			switch (name.toLowerCase()) {
 			
-				case "France":
+				case "france":
 					pays = new Pays(name, 0.0);
 					break;
 					
-				case "Espagne":
+				case "espagne":
 					pays = new Pays(name, 0.1);
 					break;
 					
-				case "USA":
+				case "usa":
 					pays = new Pays(name, 0.2);
 					break;
 					
-				case "Portugal":
+				case "portugal":
 					pays = new Pays(name, 0.15);
 					break;
 					
-				case "UK":
+				case "uk":
 					pays = new Pays(name, 0.25);
 					break;
 					

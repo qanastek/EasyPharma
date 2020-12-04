@@ -11,7 +11,7 @@ public abstract class CompteBancaire {
 	private Double solde;
 	
 	// Cartes
-	private ArrayList<CarteBancaire> cartes;
+	private ArrayList<CarteBancaire> cartes = new ArrayList<CarteBancaire>();
 	
 	public CompteBancaire() {
 		solde = 0.0;
@@ -54,6 +54,10 @@ public abstract class CompteBancaire {
 
 	public void addCarte(CarteBancaire carte) {
 		this.cartes.add(carte);
+	}
+	
+	public void removeCarte(CarteBancaire carte) {
+		this.cartes.remove(carte);
 	}
 	
 	public Double getSolde() {

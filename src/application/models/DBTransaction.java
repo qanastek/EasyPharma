@@ -13,7 +13,7 @@ public class DBTransaction {
 	/**
 	 * Store the transactions for all the pharmacies
 	 */
-	private static ArrayList<Transaction> TRANSACTIONS;
+	private static ArrayList<Transaction> TRANSACTIONS = new ArrayList<Transaction>();
 	
 	/**
 	 * Rend inutilisable le constructeur en dehors de la classe
@@ -50,6 +50,31 @@ public class DBTransaction {
 	 */
 	public ArrayList<Transaction> getAll() {
 		return DBTransaction.TRANSACTIONS;
+	}
+
+	/**
+	 * Return all the transactions
+	 * @param pharmacie
+	 * @return The transaction
+	 */
+	public ArrayList<Transaction> getAll(Pharmacie pharmacie) {
+
+		// Output transactions
+		ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+		
+		// For each transaction
+		for (Transaction transaction : DBTransaction.TRANSACTIONS) {
+			
+			// If same month and pharmacy
+			if (transaction.getVendeur() == pharmacie) {
+
+				// Add the price
+				transactions.add(transaction);
+			}
+		}
+		
+		// Return all the transactions in the period
+		return transactions;
 	}
 	
 	/**

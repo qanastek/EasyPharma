@@ -2,6 +2,8 @@ package application.models;
 
 import java.util.Random;
 
+import application.models.Utils.Toolbox;
+
 public class Pays {
 	
 	private String nom;
@@ -16,11 +18,9 @@ public class Pays {
 	 */
 	public Pays(String nom, Double coutVisa) {
 		
-		Random rand = new Random();
-		
 		this.nom = nom;
-		this.taillePopulation = rand.nextInt(500000000);
-		this.pib = ((double) rand.nextInt(Integer.MIN_VALUE));
+		this.taillePopulation = Toolbox.generateInt();
+		this.pib = ((double) Toolbox.generateInt());
 		this.coutVisa = coutVisa;
 	}
 	

@@ -11,7 +11,7 @@ import application.models.Patterns.CommandTransaction.CommandTransaction;
 public class PharmacieFranchisée extends Pharmacie {
 
 	private PharmacieFranchisée parent;
-	private ArrayList<PharmacieFranchisée> franchises;
+	private ArrayList<PharmacieFranchisée> franchises = new ArrayList<PharmacieFranchisée>();
 	private CompteFranchisé compteFranchisé;
 
 	public PharmacieFranchisée(String nom, int surfaceCommerciale, String siret, Pays pays) {
@@ -22,6 +22,10 @@ public class PharmacieFranchisée extends Pharmacie {
 	public PharmacieFranchisée(String nom, int surfaceCommerciale, String siret, Pays pays, PharmacieFranchisée parent) {
 		super(nom,surfaceCommerciale,siret,pays);		
 		this.parent = parent;
+	}
+	
+	public String getResponsableName() {
+		return responsable != null ? responsable.toString() : "Aucun responsable";
 	}
 	
 	/**
@@ -209,7 +213,7 @@ public class PharmacieFranchisée extends Pharmacie {
 		}
 		
 		// We sale the products at the base price
-		return getCompteClassique().paiement(produits, montantPanier, client, this, carteClient);
+		return getCompteBancaire().paiement(produits, montantPanier, client, this, carteClient);
 	}
 	
 	public PharmacieFranchisée getParent() {
@@ -234,6 +238,14 @@ public class PharmacieFranchisée extends Pharmacie {
 	
 	public void setCompteFranchisé(CompteFranchisé compteFranchisé) {
 		this.compteFranchisé = compteFranchisé;
+	}
+	
+	public void addFranchisé(PharmacieFranchisée p) {
+		this.franchises.add(p);
+	}
+	
+	public void removeFranchisé(PharmacieFranchisée p) {
+		this.franchises.remove(p);
 	}
 
 	@Override

@@ -52,6 +52,8 @@ public abstract class Employé extends Personne {
 		return new Date().getYear() - dateEmbauché.getYear();
 	}
 	
+	public abstract String getMétier();
+	
 	@Override
 	public String toString() {
 		return getNom() + " " + getPrénom();

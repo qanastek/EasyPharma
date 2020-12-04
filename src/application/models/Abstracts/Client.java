@@ -2,21 +2,26 @@ package application.models.Abstracts;
 
 import java.util.ArrayList;
 
+import application.models.CompteClassique;
 import application.models.Patterns.CommandTransaction.CommandTransaction;
 
 public abstract class Client {
 	
 	// Compte bancaire
-	private CompteBancaire compteBancaire;
+	protected CompteClassique compteBancaire;
 	
 	// Liste de commandes
 	private ArrayList<CommandTransaction> commandes = new ArrayList<CommandTransaction>();
 
-	public CompteBancaire getCompteBancaire() {
+	public Client() {
+		this.compteBancaire = new CompteClassique();
+	}
+	
+	public CompteClassique getCompteBancaire() {
 		return compteBancaire;
 	}
 
-	public void setCompteBancaire(CompteBancaire compteBancaire) {
+	public void setCompteBancaire(CompteClassique compteBancaire) {
 		this.compteBancaire = compteBancaire;
 	}	
 	

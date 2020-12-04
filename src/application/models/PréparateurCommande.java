@@ -80,4 +80,8 @@ public class PréparateurCommande extends Employé {
 		this.quotitéHorraires = quotitéHorraires;
 	}
 
+	@Override
+	public String getMétier() {
+		return "Préparateur de commandes";
+	}
 }

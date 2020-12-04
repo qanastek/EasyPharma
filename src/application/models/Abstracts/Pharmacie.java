@@ -7,6 +7,7 @@ import application.models.CompteClassique;
 import application.models.DBTransaction;
 import application.models.Employé;
 import application.models.Pays;
+import application.models.PharmacieFranchisée;
 import application.models.PharmacienDiplômé;
 import application.models.ProduitPharmaceutique;
 import application.models.Stock;
@@ -14,6 +15,8 @@ import application.models.Transaction;
 import application.models.Enums.TypeProduitPharmaceutique;
 import application.models.Interfaces.CalculPrixVente;
 import application.models.Patterns.CommandTransaction.CommandTransaction;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public abstract class Pharmacie extends Client {
 	
@@ -21,11 +24,11 @@ public abstract class Pharmacie extends Client {
 	private String siret;
 	private Pays pays;
 	private int surfaceCommerciale;
-	private PharmacienDiplômé responsable;
-	private CompteClassique compteClassique;
-	private ArrayList<Employé> employés;
+	protected PharmacienDiplômé responsable;
+	private ArrayList<Employé> employés = new ArrayList<Employé>();
 	private CalculPrixVente calculPrixVente;
-	private Stock stock;
+//	private Stock stock;
+	private ObservableList<ProduitPharmaceutique> stock = FXCollections.observableArrayList();
 	
 	public Pharmacie(String nom, int surfaceCommerciale, String siret, Pays pays) {
 		this.nom = nom;
@@ -70,7 +73,7 @@ public abstract class Pharmacie extends Client {
 		produits.add(p);
 		
 		// Payer l'employé
-		this.compteClassique.paiement(produits, p.getPrixVente(), employé, this, 0);
+		this.getCompteBancaire().paiement(produits, p.getPrixVente(), employé, this, 0);
 		
 		return false;
 	}
@@ -114,7 +117,7 @@ public abstract class Pharmacie extends Client {
 		}
 		
 		// We sale the products at the base price
-		return compteClassique.paiement(produits, montantPanier, client, this, carteClient);
+		return getCompteBancaire().paiement(produits, montantPanier, client, this, carteClient);
 	}
 
 	// Return the pharmacy type name
@@ -130,14 +133,6 @@ public abstract class Pharmacie extends Client {
 	
 	public void setNom(String nom) {
 		this.nom = nom;
-	}
-	
-	public CompteClassique getCompteClassique() {
-		return compteClassique;
-	}
-	
-	public void setCompteClassique(CompteClassique compteClassique) {
-		this.compteClassique = compteClassique;
 	}
 	
 	public int getSurfaceCommerciale() {
@@ -171,14 +166,22 @@ public abstract class Pharmacie extends Client {
 	public void setSiret(String siret) {
 		this.siret = siret;
 	}
-	
-	public Stock getStock() {
+
+	public ObservableList<ProduitPharmaceutique> getStock() {
 		return stock;
 	}
 	
-	public void setStock(Stock stock) {
+	public void setStock(ObservableList<ProduitPharmaceutique> stock) {
 		this.stock = stock;
 	}
+	
+//	public Stock getStock() {
+//		return stock;
+//	}
+//	
+//	public void setStock(Stock stock) {
+//		this.stock = stock;
+//	}
 	
 	public Pays getPays() {
 		return pays;
@@ -194,5 +197,26 @@ public abstract class Pharmacie extends Client {
 	
 	public void setCalculPrixVente(CalculPrixVente calculPrixVente) {
 		this.calculPrixVente = calculPrixVente;
+	}
+	
+	public void addEmployé(Employé e) {
+		this.employés.add(e);
+	}
+	
+	public void removeEmployé(Employé e) {
+		this.employés.remove(e);
+	}
+
+	public void addProduit(ProduitPharmaceutique p) {
+		this.stock.add(p);
+	}
+	
+	public void removeProduit(ProduitPharmaceutique p) {
+		this.stock.remove(p);
+	}
+	
+	@Override
+	public String toString() {
+		return this.getNom();
 	}
 }

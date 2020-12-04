@@ -42,4 +42,8 @@ public class PharmacienDiplômé extends Employé {
 		this.salaire = salaire;
 	}
 
+	@Override
+	public String getMétier() {
+		return "Pharmacien Diplômé";
+	}
 }
