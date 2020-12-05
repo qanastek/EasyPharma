@@ -61,11 +61,15 @@ public class ProduitPharmaceutique {
 	}
 
 	public Double getMarge() {
-		return marge;
+		return (1 + marge);
 	}
 
 	public void setMarge(Double marge) {
 		this.marge = marge;
 	}
 	
+	@Override
+	public String toString() {
+		return getNom();
+	}
 }

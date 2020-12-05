@@ -35,7 +35,7 @@ public abstract class Employé extends Personne {
 	 * @return
 	 */
 	public abstract Double calculSalaire(Pharmacie pharmacie, Date date);
-
+	
 	public Date getDateEmbauché() {
 		return dateEmbauché;
 	}

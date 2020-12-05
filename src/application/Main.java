@@ -10,6 +10,8 @@ import javafx.fxml.FXMLLoader;
 
 public class Main extends Application {
 	
+	public static Stage mainStage;
+	
 	@Override
 	public void start(Stage primaryStage) {
 		
@@ -29,6 +31,8 @@ public class Main extends Application {
 			
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			
+			mainStage = primaryStage;
 			
 		} catch(Exception e) {
 			e.printStackTrace();

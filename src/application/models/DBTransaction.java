@@ -66,7 +66,7 @@ public class DBTransaction {
 		for (Transaction transaction : DBTransaction.TRANSACTIONS) {
 			
 			// If same month and pharmacy
-			if (transaction.getVendeur() == pharmacie) {
+			if (transaction.getVendeur() == pharmacie || transaction.getAcheteur() == pharmacie) {
 
 				// Add the price
 				transactions.add(transaction);

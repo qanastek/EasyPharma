@@ -120,4 +120,9 @@ public class Transaction implements Cloneable {
     	
 	    return o;
   	}
+  	
+  	@Override
+  	public String toString() {
+  		return getProduits() + " pour un montant de " + getMontant() + "€";
+  	}
 }

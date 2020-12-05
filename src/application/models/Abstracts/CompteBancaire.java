@@ -14,7 +14,7 @@ public abstract class CompteBancaire {
 	private ArrayList<CarteBancaire> cartes = new ArrayList<CarteBancaire>();
 	
 	public CompteBancaire() {
-		solde = 0.0;
+		solde = 10000.0;
 	}
 	
 	public CompteBancaire(Double solde) {

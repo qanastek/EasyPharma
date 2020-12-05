@@ -3,6 +3,7 @@ package application.models;
 import java.util.ArrayList;
 import java.util.Date;
 
+import application.models.Abstracts.CarteBancaire;
 import application.models.Abstracts.Client;
 import application.models.Abstracts.Pharmacie;
 import application.models.Enums.TypeProduitPharmaceutique;
@@ -12,7 +13,7 @@ public class PharmacieFranchisée extends Pharmacie {
 
 	private PharmacieFranchisée parent;
 	private ArrayList<PharmacieFranchisée> franchises = new ArrayList<PharmacieFranchisée>();
-	private CompteFranchisé compteFranchisé;
+	private CompteFranchisé compteFranchisé = new CompteFranchisé();
 
 	public PharmacieFranchisée(String nom, int surfaceCommerciale, String siret, Pays pays) {
 		super(nom,surfaceCommerciale,siret,pays);		
@@ -39,24 +40,24 @@ public class PharmacieFranchisée extends Pharmacie {
 		PharmacieFranchisée current = this.parent;
 		
 		// While have parent
-		while(current != null && current != seller) {
-			
+		while(current != null && current != ((PharmacieFranchisée) seller).parent) {
+						
 			// Get the number of subsidiaries for the current parent
-			int nbr = getFranchises().size();
-
+			int nbr = current.getFranchises().size();
+			
 			// Compute discount
 			if(2 <= nbr && nbr <= 4) {
-				percentages += 2.5;
+				percentages += 0.025;
 			}
 			else if(5 <= nbr && nbr <= 10) {
-				percentages += 5.0;
+				percentages += 0.050;
 			}
 			else if(nbr > 10) {
-				percentages += 7.5;
+				percentages += 0.075;
 			}
 			
 			// Go up in parent tree
-			current = current.parent;
+			current = ((PharmacieFranchisée) current).parent;
 		}
 		
 		// Return the discount percentage
@@ -207,6 +208,18 @@ public class PharmacieFranchisée extends Pharmacie {
 		
 		// Check if subsidiary of us
 		if(this.getAllPharmaciesFranchisées().contains(client)) {
+			
+			System.out.println("produits");
+			System.out.println(produits);
+			
+			System.out.println("montantPanier");
+			System.out.println(montantPanier);
+			
+			System.out.println("client");
+			System.out.println(client);
+			
+			System.out.println("carteClient");
+			System.out.println(carteClient);
 
 			// We sale the products at the custom price
 			return getCompteFranchisé().paiement(produits, montantPanier, client, this, carteClient);
@@ -241,6 +254,9 @@ public class PharmacieFranchisée extends Pharmacie {
 	}
 	
 	public void addFranchisé(PharmacieFranchisée p) {
+		p.parent = this;
+		p.getCompteBancaire().addCarte(new CarteBancairePharmacie(new MasterCard()));
+		p.getCompteBancaire().addCarte(new CarteBancaireClassique(new Visa()));
 		this.franchises.add(p);
 	}
 	

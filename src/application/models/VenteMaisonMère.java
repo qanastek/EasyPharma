@@ -14,7 +14,7 @@ public class VenteMaisonMère implements CalculPrixVente {
 	 * @return
 	 */
 	public double calculPrixVente(Double montant, Pharmacie seller, Client buyer) {
-		return montant * (1 - buyer.getReduction(seller));
+		return montant * (1 - ((PharmacieFranchisée) buyer).getReduction(seller));
 	}
 
 }

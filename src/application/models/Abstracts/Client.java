@@ -45,5 +45,9 @@ public abstract class Client {
 	public void setCommandes(ArrayList<CommandTransaction> commandes) {
 		this.commandes = commandes;
 	}
+	
+	public void addCarteBancaire(CarteBancaire cb) {
+		this.getCompteBancaire().addCarte(cb);
+	}
 
 }
