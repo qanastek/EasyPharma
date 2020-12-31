@@ -219,6 +219,8 @@ public class MainController implements Initializable {
 		
 		listenClick();
 		
+		clients.addAll(data);
+		
 		// Force client 1 to get a mastercard
 		clients.get(0).addCarteBancaire(new CarteBancaireClassique(new MasterCard()));
 	}
@@ -369,13 +371,15 @@ public class MainController implements Initializable {
     	PharmacienDiplômé responsable = MainController.currentPharmacie.getResponsable();
     	responsablePharma.setText(responsable != null ? responsable.toString() : "Pas de responsable");		
 
-    	dataFranchises.setAll(((PharmacieFranchisée) MainController.currentPharmacie).getAllPharmaciesFranchisées());
-    	
     	boolean status = true;
     	
     	// Check if is a subsidiary
     	if (MainController.currentPharmacie instanceof PharmacieFranchisée) {
+    		
     		status = false;
+
+        	dataFranchises.setAll(((PharmacieFranchisée) MainController.currentPharmacie).getAllPharmaciesFranchisées());
+        	
         	comptePharmacie.setText(
         			String.valueOf(((PharmacieFranchisée) MainController.currentPharmacie).getCompteFranchisé().getSolde())
         			+ " €"
@@ -605,14 +609,15 @@ public class MainController implements Initializable {
 
         System.out.println("saluce add!");
         
-		data.add(
-			new PharmacieIndépendante(
-				"Pharmacie " + (int) (Math.random() * (99999 - 1)),
-				100,
-				String.valueOf((int) (Math.random() * (9999999 - 99999))),
-				PaysFactory.getInstance().getPays("france")
-			)
+        Pharmacie p = new PharmacieFranchisée(
+			"Pharmacie " + (int) (Math.random() * (99999 - 1)),
+			100,
+			String.valueOf((int) (Math.random() * (9999999 - 99999))),
+			PaysFactory.getInstance().getPays("france")
 		);
+        
+		data.add(p);
+		clients.add(p);
 		
 		for (Pharmacie pharmacie : data) {
 			System.out.println(pharmacie.getType());
